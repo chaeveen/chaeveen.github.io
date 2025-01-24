@@ -109,7 +109,7 @@ header .menu {
     font-size: 0;
     padding: 0.688rem;
     padding-top: 0.875rem;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 header .menu::after {
@@ -456,12 +456,12 @@ section.main {
 }
 
 .about .bot .second span:nth-child(1) {
-    width: 15%;
+    width: 27%;
     background-color: #fff;
 }
 
 .about .bot .second span:nth-child(2) {
-    width: 50%;
+    width: 37%;
     color: transparent;
 }
 
