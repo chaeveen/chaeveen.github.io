@@ -26,7 +26,7 @@ $(function(){
     })
 })
 
-(function () {
+(function(){
 	var $imgs = $('.img');
 	var $buttons = $('#buttons');
 	var tagged = {};
