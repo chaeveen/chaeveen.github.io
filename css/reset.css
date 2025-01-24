@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* 내부서체 */
+@font-face {
+    font-family: 'main-kr';
+    src: url(font/KoPubWorld\ Dotum\ Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'portpolio';
+    src: url(font/BAUHS93.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'about';
+    src: url(font/Hey\ August.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'web';
+    src: url(font/HBIOS-SYS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'graphic';
+    src: url(font/GmarketSansTTFLight.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pyeongchang';
+    src: url(font/PyeongChangPeace-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.pyeongchang_bold{
+    font-family: 'pyeongchang';
+}
+@font-face {
+    font-family: 'nanum_bold';
+    src: url(font/NanumSquareB.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.nanum_bold{
+    font-family: 'nanum_bold';
+}
+@font-face {
+    font-family: 'nanum_regular';
+    src: url(font/NanumSquareR.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.nanum_regular{
+    font-family: 'nanum_regular';
+}
+@font-face {
+    font-family: 'myeongjo_eb';
+    src: url(font/NanumMyeongjoExtraBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.myeongjo_eb{
+    font-family: 'myeongjo_eb';
+}
+@font-face {
+    font-family: 'myeongjo_b';
+    src: url(font/NanumMyeongjoBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.myeongjo_b{
+    font-family: 'myeongjo_b';
+}
+@font-face {
+    font-family: 'myeongjo_r';
+    src: url(font/NanumMyeongjo.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.myeongjo_r{
+    font-family: 'myeongjo_r';
+}
+@font-face {
+    font-family: 'noto_m';
+    src: url(font/NotoSansKR-Medium.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.noto_m{
+    font-family: 'noto_m';
+}
+@font-face {
+    font-family: 'noto_r';
+    src: url(font/NotoSansKR-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.noto_r{
+    font-family: 'noto_r';
+}
+@font-face {
+    font-family: 'noto_l';
+    src: url(font/NotoSansKR-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.noto_l{
+    font-family: 'noto_l';
+}
+@font-face {
+    font-family: 'pretendard_r';
+    src: url(font/Pretendard-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+.pretendard_r{
+    font-family: 'pretendard_r';
+}
+@font-face {
+    font-family: 'pretendard_b';
+    src: url(font/Pretendard-Bold.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+.pretendard_b{
+    font-family: 'pretendard_b';
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html,
+button {
+	color: #000;
+	font-family: 'main-kr';
+	font-weight: normal;
+	line-height: 1;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.w1600{
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.w1400{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+i,b{
+    font-style: normal;
+}
+::selection{
+    background-color: #000;
+    color: #fff;
+}
