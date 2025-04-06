@@ -1,0 +1,41 @@
+@charset "utf-8";
+.preparing{padding: 6rem 0;}
+.sub_tit{margin-top: 100px;}
+.sub_tit .wrap{height: 300px;width: 100%;background: url(../images/main/sub_tit.png) no-repeat center;display: flex;background-size: cover;border-radius: 50px;padding: 60px 60px 40px;flex-direction: column;justify-content: flex-end;}
+.sub_tit h3{font-size: 3rem;color: #fff;font-weight: 600;border-bottom: 1px solid #fff;margin-bottom: 10px;text-shadow: 0 0 3px #00000070;}
+.sub_tit .location ul{display: flex;}
+.sub_tit .location ul li{display: flex;align-items: center;position: relative;}
+.sub_tit .location ul li a{display: flex;align-items: center;color: #fff;font-size: 1.15rem;}
+.sub_tit .location ul li img{display: flex;align-items: center;}
+.sub_tit .location .loca_menu::after{content:'';display: inline-block;margin: 0 20px;background: #fff;width: 1px;height: 8px;}
+.sub_tit .location .loca_menu:last-child{font-weight: 600;}
+.sub_tit .location .loca_menu:last-child::after{display: none;}
+.sub_tit .location .loca_menu > a::after {content: ''; display: block;background: url('../images/common/gnb_ic.png') center no-repeat;width: 10px; height: 5px; transform: translateY(-50%);background-size: cover;-webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1);margin: 5px 0 0 20px;}
+.sub_tit .location .loca_menu.on > a::after {transform: rotate(180deg) translateY(35%);}
+.sub_tit .location .loca_menu:first-child a::after {display: none;}
+
+.sub_tit .location .loca_list {display: none;position: absolute;top: 130%;left: -20px;background-color: #000000bf;padding: 20px;border-radius: 15px;width: fit-content;min-width: 200px;}
+.sub_tit .location .loca_list a{padding: 5px 0;}
+
+
+
+
+
+
+.tit_st2{font-size: 3rem;text-align: center;font-weight: 700;margin-bottom:30px;color: #000;line-height: 1;}
+.tit_st3{font-size: 1.8rem;text-align: center;color: #888;font-weight: 500;}
+
+.sub_tit p{color: #fff;display: inline-block;margin-left: 30px;font-size: 1.25rem;}
+
+@media screen and (max-width: 1600px) {
+    .sub_tit{margin-top: 75px;padding: 0 10px;}
+}
+
+@media screen and (max-width: 900px) {
+    .sub_tit .wrap{height: 200px;padding: 30px 40px;}
+    .sub_tit .location{display: none;}
+}
+
+
+/* preparing */
+.tit_st2 .material-icons{font-size: 5rem;color: var(--blue);}
