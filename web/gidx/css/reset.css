@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/*
-  [240807 수진추가]
-  - input 설정에 input[type="email"] 추가
-*/
 
 html {
   scroll-behavior: smooth;
