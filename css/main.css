@@ -642,6 +642,7 @@ section.main {
 #web .mid .wrap a{
     padding: 1.875rem;
     display: block;
+    overflow:hidden;
 }
 #web .mid .wrap a img{
     width: 100%;
