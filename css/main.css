@@ -650,7 +650,7 @@ section.main {
 #web .mid .wrap a::after{
     content:'';
     position:absolute;
-    width: 463.33px;
+    width: 465px;
     height:1.875rem;
     background:#fff;
     bottom:0;
