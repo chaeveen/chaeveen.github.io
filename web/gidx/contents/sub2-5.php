@@ -1,0 +1,437 @@
+<?php include_once('../inc/doctype.php'); ?>
+<?php include_once('../inc/header.php'); ?>
+
+<div class="sub_tit sub2">
+    <div class="wFix">
+        <h2 class="tit">기업애로해소 중점 DX시범 지원</h2>
+        <div class="location mt10">
+            <span>· Home</span>
+            <span>DX사업지원</span>
+            <span>기업애로해소 중점 DX시범 지원</span>
+        </div>
+    </div>
+</div>
+
+<nav class="sub_nav">
+    <ul class="sub_lnb wFix sub2">
+        <li><a href="../contents/sub2-3.php">경북 산업 디지털 대전환 지원서비스</a></li>
+        <li><a href="../contents/sub2-1.php">경북 맞춤형 DX 컨설팅 지원</a></li>
+        <li><a href="../contents/sub2-2.php">융합 얼라이언스 구축·운영</a></li>
+        <li><a href="../contents/sub2-5.php" class="on">기업애로해소 중점 DX시범 지원</a></li>
+        <li><a href="../contents/sub2-4.php">지역 내 연구·지원기관 연계</a></li>
+    </ul>
+</nav>
+
+<main class="sub">
+    <div class="wFix">
+        <section class="section sub2-5">
+            <div class="sub_viz">
+                <b>지역 기업의 기업 운영</b> 및 <b>제조현장의<br>
+                애로해결</b>을 위한 DX사업을 지원하고 있습니다
+            </div>
+
+            <ul class="nav-tabs nav-tabsSt4 mb50">
+                <li><a href="javascript:void(0);" id="tab_a" class="tab">SaaS형 제조운영 이용 컨설팅 및 시범 지원</a></li>
+                <li><a href="javascript:void(0);" id="tab_b" class="tab">노후설비 Retrofit 컨설팅 및 시범지원</a></li>
+                <li><a href="javascript:void(0);" id="tab_c" class="tab">공급망 관계 분석 지원</a></li>
+                <li><a href="javascript:void(0);" id="tab_d" class="tab active">기타 DX 지원사업</a></li>
+            </ul>
+
+            <div class="tab-content" id="section_a">
+                <div class="box_st3">
+                    <p class="txt_st1">기업의 효율적 기업운영 및 제조데이터 관리를 위한 SaaS형* 제조운영시스템(ERP, MES 등) 이용방안 마련 컨설팅 지원</p>
+                    <p class="txt_st1 font_grayDark">* SaaS(Software as a Service): 클라우드 서비스 제공자가 사용자가 필요로 하는 애플리케이션을 가상화된 서비스로 제공하는 서비스</p>
+                    <p class="txt_st1">수혜기업에게 SaaS 방식의 제조운영시스템 도입을 위한 가이드 제시</p>
+                </div>
+
+                <div class="section sub2-1 sub2-5 mt50">
+                    <div class="d_flex p_relative">
+                        <div class="tit">
+                            수혜기업 현황 및<br>
+                            요구사항 분석
+                        </div>
+                        <div class="txt">
+                            기업의 공정, IT 인프라, 운영 방식 등 현황 분석<br>
+                            수혜기업 사용자 요구사항 도출 및 분석<br>
+                            SaaS형 제조운영시스템 도입의 필요성과 적합성 검토
+                        </div>
+                    </div>
+                    <div class="d_flex p_relative">
+                        <div class="tit">
+                            수혜기업 맞춤형<br>
+                            SaaS 솔루션 제안
+                        </div>
+                        <div class="txt">
+                            기업의 특성에 맞는 SaaS형 ERP(Enterprise Resource Planning)<br>
+                            및 MES(Manufacturing Execution System) 등<br>
+                            기업 맞춤형 솔루션 제안
+                        </div>
+                    </div>
+                    <div class="d_flex p_relative">
+                        <div class="tit">
+                            단계별 기업 맞춤형<br>
+                            SaaS 솔루션 도입 계획 수립
+                        </div>
+                        <div class="txt">
+                            도입 초기 단계, 중간 점검 단계, 도입 완료 단계별<br>
+                            리소스, 일정, 예상 성과 등 상세 계획 수립<br>
+                            기업 맞춤형 SaaS 솔루션 도입 비용, 운영 비용,<br>
+                            예상 효율성 및 개선효과(투자대비효과 등) 예측
+                        </div>
+                    </div>
+                    <div class="d_flex p_relative">
+                        <div class="tit">
+                            리스크 관리<br>
+                            방안 수립
+                        </div>
+                        <div class="txt">
+                            기업 맞춤형 SaaS 솔루션 도입 및<br>
+                            운영 중 발생할 수 있는 리스크 예측 및<br>
+                            대응 방안 마련
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box_st3 mt50">
+                    <h4 class="txt_st1 t_center font_sub01Color font_bold">기업 맞춤 SaaS형 제조운영서비스 이용 시범지원 절차</h4>
+                    <div class="sub2-1 mt50">
+                        <div class="d_flex figure_wrap mb20 j-c_center a-i_flex-start">
+                            <div class="square_wrap">
+                                <div class="square bg_mainColor">
+                                    <span class="tit font_white">PoC 계획 수립</span>
+                                    <span class="con">전문기업</span>
+                                </div>
+                                <div class="sub_square line_mainColor">
+                                    PoC의 목적, 범위, 일정,<br>
+                                    필요한 리소스 등을<br>
+                                    명확히 정의
+                                </div>
+                                <div class="sub_square line_mainColor">
+                                    PoC를 통해<br>
+                                    검증하고자 하는<br>
+                                    핵심 지표와<br>
+                                    기대 성과 설정
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub01Color">
+                                    <span class="tit font_white">PoC 환경 구축</span>
+                                    <span class="con">수혜기업/전문기업</span>
+                                </div>
+                                <div class="sub_square line_sub01Color">
+                                    SaaS형 제조운영시스템<br>
+                                    모듈 중 도입대상<br>
+                                    기능 정의 및<br>
+                                    테스트 가능한 기능 구현
+                                </div>
+                                <div class="sub_square line_sub01Color">
+                                    수혜기업에 실제 운영<br>
+                                    환경과 유사한<br>
+                                    테스트 환경 구축
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub02Color">
+                                    <span class="tit font_white">PoC 수행</span>
+                                    <span class="con">전문기업/<br>
+                                    협업지원센터</span>
+                                </div>
+                                <div class="sub_square line_sub02Color">
+                                    설정한 지표를 기준으로<br>
+                                    시스템의 성능, 효율성,<br>
+                                    안정성 등을 검증
+                                </div>
+                                <div class="sub_square line_sub02Color">
+                                    PoC 중 발생한<br>
+                                    문제점 및 개선사항을<br>
+                                    기록하고 분석
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub03Color">
+                                    <span class="tit font_white">PoC 도입 결과분석</span>
+                                    <span class="con">수혜기업/전문기업</span>
+                                </div>
+                                <div class="sub_square line_sub03Color">
+                                    PoC 도입 결과를<br>
+                                    종합적으로 분석하여<br>
+                                    도입 타당성 검토
+                                </div>
+                                <div class="sub_square line_sub03Color">
+                                    도입 후 개선사항 제시<br>
+                                    및 개선효과를 반영한<br>
+                                    최종 보고서 작성
+                                </div>
+                                <div class="sub_square line_sub03Color">
+                                    수혜기업과 협의를 통해<br>
+                                    최종 도입 범위 결정 및<br>
+                                    후속 조치 계획 수립
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- \\tab_a -->
+
+            <div class="tab-content" id="section_b">
+                <div class="box_st3">
+                    <p class="txt_st1">기존 제조설비에 DX 기술을 적용(센서, IoT 등)한 디지털전환 방안 마련 컨설팅 지원<br>
+                    제조설비에 대한 현장 맞춤형 DX Retrofit* 컨설팅 지원을 통해 기업의 현장애로 해결 및 효율적 제조설비 활용 방안 마련</p>
+                    <p class="txt_st1 font_grayDark">* DX Retrofit : 노후화된 기존 제조 장비의 성능 개선 및 센서, 네트워크 등의 추가 설치를 통해 제조장비의 디지털화를 추진</p>
+                </div>
+
+                <h3 class="tit_st2 mt20 mb15">노후설비 Retrofit 컨설팅</h3>
+
+                <div class="d_flex box_wrap p_relative">
+                    <div class="box">
+                        <div class="tit">
+                            제조공정 및<br>
+                            설비 분석
+                        </div>
+                        <ul class="list_st1">
+                            <li>수혜기업의 제조 핵심
+                                공정 및 설비에 대한
+                                분석 수행
+                            </li>
+                            <li>수혜기업의 제조 핵심
+                                공정 및 설비 중
+                                Retrofit 대상 선정
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="tit font_sub01Color">
+                            제조설비 DX Retrofit<br>
+                            개선안 도출
+                        </div>
+                        <ul class="list_st1">
+                            <li>제조공정 및 설비 분석
+                                결과에 따른 제조설비의
+                                개조 및 Retrofit
+                                개선점 도출
+                            </li>    
+                            <li>공정인자 개선을 달성할
+                                수 있는 설비 변수 도출
+                            </li>
+                            <li>설비 변수 네트워크화 및
+                                모니터링을 위한 체계 도출 및
+                                개선(개조)방안 수립
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="tit font_sub02Color">
+                            제조설비 DX Retrofit<br>
+                            개선효과 도출
+                        </div>
+                        <ul class="list_st1">
+                            <li>설비 변수 네트워크화
+                                및 모니터링을 통한
+                                개선 실행
+                            </li>
+                            <li>제조공정 및 설비 분석
+                                결과에 따른 제조설비의
+                                개선효과 (생산성 향상 등) 도출
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="tit font_sub03Color">
+                            제조설비 DX Retrofit<br>
+                            추진계획 수립
+                        </div>
+                        <ul class="list_st1">
+                            <li>제조공정 및 설비
+                                Retrofit 단계별
+                                소요비용 및 추진계획 수립
+                            </li>
+                            <li>제조공정 및 설비
+                                Retrofit 추진계획에 따른
+                                기대효과(투자대비효과 등) 예측
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box_st3 mt50">
+                    <h4 class="txt_st1 t_center font_sub01Color font_bold">기업 맞춤형 제조설비 디지털전환(DX) 시범 지원 절차</h4>
+                    <div class="sub2-1 mt50 tab2">
+                        <div class="d_flex figure_wrap mb20 j-c_center a-i_flex-start">
+                            <div class="square_wrap">
+                                <div class="square bg_mainColor">
+                                    <span class="tit font_white lh110 t_center">
+                                        제조설비 DX Retrofit<br>
+                                        추진계획 분석
+                                    </span>
+                                    <span class="con">
+                                        수혜기업/전문기업/<br>
+                                        협업지원센터
+                                    </span>
+                                </div>
+                                <div class="sub_square line_mainColor">
+                                    ­수혜기업을 대상으로<br>
+                                    제조설비 DX Retrofit<br>
+                                    개선안, 개선효과 및<br>
+                                    추진계획 등의<br>
+                                    컨설팅 결과 분석
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub01Color">
+                                    <span class="tit font_white lh110 t_center">제조설비 DX 시범<br>지원 대상 선정</span>
+                                    <span class="con">수혜기업/전문기업/<br>협업지원센터</span>
+                                </div>
+                                <div class="sub_square line_sub01Color">
+                                    수혜기업의 제조 핵심<br>
+                                    공정 및 설비에 대해<br>
+                                    산업 AI 내재화 관점에서<br>
+                                    분석 수행
+                                </div>
+                                <div class="sub_square line_sub01Color">
+                                    수혜기업의 제조 핵심<br>
+                                    공정 및 설비 중 산업 AI<br>
+                                    내재화 관점 고려 및<br>
+                                    수혜기업의 요구사항<br>
+                                    등을 반영하여<br>
+                                    DX Retrofit 대상선정
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub02Color">
+                                    <span class="tit font_white lh110 t_center">
+                                        제조설비 DX 시범<br>
+                                        지원 수행
+                                    </span>
+                                    <span class="con">수혜기업/전문기업</span>
+                                </div>
+                                <div class="sub_square line_sub02Color">
+                                    DX 시범지원 대상<br>
+                                    설비에 대한 성능개선<br>
+                                    계획에 따라 제조설비의<br>
+                                    개조 및 DX Retrofit 수행<br>
+                                </div>
+                                <div class="sub_square line_sub02Color">
+                                    공정인자 개선을 달성<br>
+                                    할 수 있는 설비 변수<br>
+                                    및 네트워크화, 모니터링<br>
+                                    체계 등을 반영한 제조<br>
+                                    설비 성증 개선 수행<br>
+                                    (핵심부품 교체,설비<br>
+                                    변수의 Digitalization)
+                                </div>
+                            </div>
+                            <div class="square_wrap">
+                                <div class="square bg_sub03Color">
+                                    <span class="tit font_white lh110 t_center">
+                                        제조설비 제조 데이터<br>
+                                        수집·분석
+                                    </span>
+                                    <span class="con">수혜기업/전문기업</span>
+                                </div>
+                                <div class="sub_square line_sub03Color">
+                                    성능개선 대상 제조<br>
+                                    설비에서 제조 데이터<br>
+                                    수집 및 분석
+                                </div>
+                                <div class="sub_square line_sub03Color">
+                                    수집된 제조 데이터<br>
+                                    및 분석 결과를<br>
+                                    수행 기업에 제공
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- \\tab_b -->
+
+            <div class="tab-content" id="section_c">
+                <div class="box_st3">
+                    <p class="txt_st1">산업 데이터기반 기업 공급사슬 관계, 신뢰도 분석을 통한 밸류체인 분석 및 시각화 결과를 제공하는 컨설팅 추진<br>
+                        이를 통해 지역 기업의 공급망 최적화 및 생산 비용 절감 등 제조기업의 효율적 운영에 대한 합리적 의사결정 지원
+                    </p>
+                </div>
+
+                <div class="img_wrap">
+                    <div class="circle">
+                        <div class="txt">
+                            기업의 제품(서비스)과 관련된<br>
+                            <b class="font_sub01Color">전후방 산업관계</b>를 분석을 통하여<br>
+                            해당 기업의 <b class="font_sub03Color">잠재 비즈니스 파트너 발굴</b>과<br>
+                            <b class="font_sub03Color">안정적인 공급망</b> 확보 지원
+                        </div>
+                    </div>
+                    <div class="desc_wrap nth1">
+                        <img src="../images/sub/sub2-5-2.png" alt="img">
+                        <div class="txt">
+                            <h5>수혜기업 현황 및 요구사항 도출</h5>
+                            <p>수혜기업의 생산, 물류, 재고, 판매와 관련된 기업 내부 데이터 등 기업데이터 도출<br>
+                            수혜기업 경영진 및 관계자 등의 사용자 요구사항 도출</p>
+                        </div>
+                    </div>
+                    <div class="desc_wrap nth2">
+                        <img src="../images/sub/sub2-5-3.png" alt="img">
+                        <div class="txt">
+                            <h5>수혜기업 관련 업종의 외부 데이터 수집·정제</h5>
+                            <p>수혜기업 관련 업종의 시장/기술 동향 정보 등 산업 분석 자료 수집·정제<br>
+                            수혜기업 경쟁사 데이터 수집·정제</p>
+                        </div>
+                    </div>
+                    <div class="desc_wrap nth3">
+                        <img src="../images/sub/sub2-5-4.png" alt="img">
+                        <div class="txt">
+                            <h5>수혜기업의 벨류체인 단계별 내·외부 데이터 분석 수행</h5>
+                            <p>벨류체인 데이터 비교 분석 : 벨류체인 내·외부 데이터를 비교 분석 수행</p>
+                        </div>
+                    </div>
+                    <div class="desc_wrap nth4">
+                        <img src="../images/sub/sub2-5-5.png" alt="img">
+                        <div class="txt">
+                            <h5>수혜기업 현황 및 요구사항 도출</h5>
+                            <p>수혜기업에 최적화된 벨류체인 모델 도출</p>
+                        </div>
+                    </div>
+                    <div class="desc_wrap nth5">
+                        <img src="../images/sub/sub2-5-6.png" alt="img">
+                        <div class="txt">
+                            <h5>기업 맞춤형 기업 관계망 분석 및 시각화 결과 제공</h5>
+                            <p>기업 내부 및 외부의 관계를 데이터 기반으로 체계적으로 분석하고 시각화하여 기업 경영에 대한 합리적이고 전략적인 의사결정을 지원</p>
+                            <p class="font_grayDark">내부 관계 : 팀원들의 담당 프로젝트 및 협업관계 분석, 이메일 송수신 관계 분석<br>
+                            외부 관계 : 공급업체, 고객 간 거래관계 분석</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- \\tab_c -->
+
+            <div class="tab-content active" id="section_d">
+                <div class="box_st3">
+                    <h4 class="txt_st1 t_center font_sub01Color font_bold">지역산업 디지털 밸류체인망 구축</h4>
+                    <p class="txt_st1 mt20 t_center">개발-생산 유통-소비 등 밸류체인 단계별 디지털 전환을 통해 산업데이터 기반 협업환경 조성</p>
+                    <div class="img_wrap mt50 sub2-1">
+                        <img src="../images/sub/sub2-3-1.png" alt="img">
+                    </div>
+                    <p class="txt_st1 p0 t_center mt30 font_500">▲ 지역산업 벨류체인망 예시</p>
+                </div>
+
+                <div class="box_st3 mt50">
+                    <h4 class="txt_st1 t_center font_sub01Color font_bold">국내외 DX선도사례 발굴·확산</h4>
+                    <p class="txt_st1 mt20 t_center">산업별 DX 기술 보급·활성화를 위해 DX유형별 선도사례 및 Usecase 발굴 · 확산</p>
+                    <div class="img_wrap mt50 sub2-1 t_center">
+                        <img src="../images/sub/sub2-3-3.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="box_st3 mt50">
+                    <h4 class="txt_st1 t_center font_sub01Color font_bold">DX기술 수요-공급기업 매칭서비스</h4>
+                    <p class="txt_st1 mt20 t_center">산업데이터 정보를 기반으로 수요-공급기업 간 협업 지원을 위한 기술·기업 매칭 서비스</p>
+                    <div class="img_wrap mt50 sub2-1 t_center">
+                        <img src="../images/sub/sub2-3-2.png?v1" alt="img">
+                    </div>
+                </div>
+
+            </div><!-- \\tab_d -->
+        </section>
+    </div>
+</main>
+
+<?php include_once('../inc/footer.php'); ?>
