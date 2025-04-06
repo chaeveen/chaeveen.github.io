@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
-    <meta property="og:url" content="http://sian.knlsys.com/gidx/contents/main.php">
+    <meta property="og:url" content="https://chaeveen.github.io/web/gidx/contents/main.php">
     <meta property="og:title" content="경북산업DX협업지원센터">
     <meta property="og:type" content="website">
     <meta property="og:image" content="../images/common/share.png">
