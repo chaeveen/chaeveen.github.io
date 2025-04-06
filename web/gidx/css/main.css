@@ -777,6 +777,9 @@ header.active {
   position: relative;
   gap: 3.125rem;
 }
+.corporation .swiper-wrapper{
+  height:auto;
+}
 .corporation .swiper-pagination {
   width: calc(100% - 15.625rem);
   background-color: #eeeff3;
