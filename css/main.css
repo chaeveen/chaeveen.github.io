@@ -634,6 +634,7 @@ section.main {
     height: 5.938rem;
     border-bottom: #000 2px solid;
     text-align: center;
+    padding: 1rem;
 }
 #web .mid .wrap h4 img{
     height: 100%;
@@ -643,6 +644,18 @@ section.main {
     padding: 1.875rem;
     display: block;
     overflow:hidden;
+    height: 523px;
+    position:relative;
+}
+#web .mid .wrap a::after{
+    content:'';
+    position:absolute;
+    width: 463.33px;
+    height:1.875rem;
+    background:#fff;
+    bottom:0;
+    left:1.875rem;
+    border-top:2px solid #000;
 }
 #web .mid .wrap a img{
     width: 100%;
