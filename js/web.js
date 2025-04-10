@@ -85,3 +85,65 @@ $(function(){
         $(tabid).show();
     })
 })
+
+(function () {
+	var $imgs = $('.img');
+	var $buttons = $('#buttons');
+	var tagged = {};
+
+	$imgs.each(function () {
+		var img = this;
+		var tags = $(this).data('tags'); 
+		if (tags) {
+			tags.split(',')
+            // 두개 적히면 두 개 다 나오는것
+            .forEach(function (tagName) {
+				if (tagged[tagName] == null) {
+					tagged[tagName] = [];
+				}
+				tagged[tagName].push(img);
+			});
+		}
+	});
+
+	$('<button/>', {
+		text: 'all',
+        //모두보기,전체보기 같은 텍스트
+		class: 'active',
+		click: function () {
+			$(this)
+				.addClass('active').siblings().removeClass('active');
+                //.siblings 나머지
+			$imgs.hide().fadeIn(500);
+            //모두 다 사라진 다음에 this 해당한 애만 fade in
+		}
+	}).appendTo($buttons);
+    //괄호 안에 넣어준다
+
+	$.each(tagged, function (tagName) {
+		$('<button/>', {
+			text: tagName,
+			click: function () {
+				$(this).addClass('active').siblings().removeClass('active');
+				$imgs.hide().filter(tagged[tagName]).fadeIn(500);
+			}
+		}).appendTo($buttons);
+	});
+
+}());
+
+$(function(){
+    //모달컨텐츠 클릭시
+    $('#graphic .right .modal-list').click(function(){
+        let i=$(this).index();
+        $('#modal .contents').eq(i).fadeIn();
+        $('.modal-close').fadeIn();
+        $('body').css('overflow','hidden');
+        $('.modal-bg').fadeIn();
+    })
+    $('.modal-close,.modal-bg').click(function(){
+        $('.contents').fadeOut();
+        $('.modal-close,.modal-bg').fadeOut();
+        $('body').css('overflow','auto');
+    })
+})
