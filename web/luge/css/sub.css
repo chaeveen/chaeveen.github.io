@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* ----------------------- 연맹소개 ----------------------- */
+/* 환영사 */
+.welcome-txt{padding: 40px;font-size: 1.125rem;font-weight: 300;margin: 50px 20px 20px;background-color: #fff;position: relative;}
+.welcome-txt::before{content: '';display: block;width: 80px;height: 80px;background-color: #F2784E;position: absolute;top: -20px;left: -20px;z-index: -1;}
+.welcome-txt p{margin-bottom: 35px;}
+.welcome-txt .t_right{font-size: 1.3rem;font-weight: 400;}
+.welcome-txt .img{text-align: right;width: 100%;display: block;margin-bottom: 20px;padding-right: 30px;}
+.welcome-txt .img img{width: 200px;border-radius:10px}
+
+/* 연혁 */
+.history-wrap{position: relative;}
+.history-wrap::before{content: '';position: absolute;width: 10px;height: 100%;background: rgb(211,221,232);background: rgb(211,221,232);background: linear-gradient(180deg, rgba(211,221,232,1) 0%, rgba(165,201,241,1) 25%, rgba(105,151,201,1) 50%, rgba(43,95,152,1) 75%, rgba(0,45,94,1) 100%);top: 0;left: 25%;}
+.history{border-bottom: 1px dashed #E6E6E6;padding: 50px 20px;display: flex;justify-content: space-between;}
+.history:last-child{border-bottom: none;}
+.history .year{width: 20%;font-size: 4.5rem;font-weight: 900;line-height: 1;position: relative;}
+.history .year::after{content: '';position: absolute;width: 1.25rem;height: 1.25rem;top: 22px;left: 115%;border-radius: 50%;background-color: #fff;}
+.history .his-list{width: 70%;}
+.history .his-list li{margin-bottom: 20px;font-size: 1.125rem;font-weight: 300;}
+
+.yc1{color: #D3DDE8}
+.yc1::after{border: 10px solid #D3DDE8;}
+.yc2{color: #A5C9F1}
+.yc2::after{border: 10px solid #A5C9F1}
+.yc3{color: #6997C9}
+.yc3::after{border: 10px solid #6997C9}
+.yc4{color: #2B5F98}
+.yc4::after{border: 10px solid #2B5F98}
+.yc5{color: #002D5E}
+.yc5::after{border: 10px solid #002D5E}
+
+/* 조직도 */
+.organization{display: flex;justify-content: center;flex-direction: column;position: relative;margin: 70px auto 370px;width: 880px;}
+.organization::before{position: absolute;content: '';top: 541px;right: 50%;width: 400px;height: 2px;border-top: 1px dashed #aaa;z-index: -1;}
+.organization::after{position: absolute;content: '';top: 240px;left: 50%;transform: translateX(-50%);width: 2px;height: 50%;border-left: 1px dashed #aaa;z-index: -1;}
+.oz{display: flex;justify-content: center;align-items: center;color: #fff;text-align: center;}
+.oz-1{height: 240px;background: url(../images/organization1.png) center center no-repeat;background-size: contain;font-weight: 700;font-size: 1.5rem;margin-bottom: 60px;}
+.oz-1::before{position: absolute;content: '';top: 537px;right: 50%;width: 8px;height: 8px;border-radius: 50%;background-color: #000;transform: translateX(3px);}
+.oz-2{height: 90px;background: url(../images/organization2.png) center center no-repeat;background-size: contain;margin-bottom: 40px;font-weight: 500;font-size: 1.25rem;}
+.oz-wrap{display: flex;flex-direction: column;justify-content: center;position: absolute;top: 300px;right: 0;width: 270px;}
+.oz-wrap::before{position: absolute;content: '';top: 45px;right: 100%;width: 30px;height:2px;border-top: 1px dashed #aaa;z-index: -1;}
+.oz-wrap::after{position: absolute;content: '';top: 90px;left: 50%;transform: translateX(-50%);width: 2px;height:60px;border-left: 1px dashed #aaa;z-index: -1;}
+.oz-wrap .oz-3{background-color:#0066D5;font-size:1.25rem;color: #fff;display: flex;justify-content: center;align-items: center;margin-bottom: 40px;height: 90px;}
+.oz-wrap .oz{color:#0066D5;border: 1px solid #0066D5;font-size:1.125rem;border-radius: 50px;width: 100%;margin-bottom: 10px;height: 70px;background-color: #fff;}
+.oz-wrap2{display: flex;flex-direction: column;justify-content: center;position: absolute;top: 498px;left: 0;width: 270px;}
+.oz-wrap2::after{position: absolute;content: '';top: 90px;left: 50%;transform: translateX(-50%);width: 2px;height:60px;border-left: 1px dashed #aaa;z-index: -1;}
+.oz-wrap2 .oz-3{background-color:#F2784E;font-size:1.25rem;color: #fff;display: flex;justify-content: center;align-items: center;margin-bottom: 40px;height: 90px;}
+.oz-wrap2 .oz{color:#F2784E;border: 1px solid #F2784E;font-size:1.125rem;border-radius: 50px;width: 100%;margin-bottom: 10px;height: 70px;background-color: #fff;}
+
+/* 연맹규정 */
+.tab-con{display: none;}
+.tab-con.on{display: block;}
+.revision{font-size: 0.8rem;border-radius: 10px;background-color: #eef1f6;padding: 30px;display: flex;flex-wrap: wrap;gap: 60px;margin-top: 20px;justify-content: flex-end;}
+.revision .wrap p{margin-bottom: 10px;}
+.revision .wrap p:last-child{margin-bottom: 0px;}
+
+.table_st1.regulation{width: auto;margin-top: 10px;}
+.table_st1.regulation th,.table_st1.regulation td{padding: 10px;font-size: 1rem;}
+sup{font-size: 0.8rem;color: #aaa;}
+
+/* 목표 및 비전 */
+.vision{width:880px;display: flex;margin: 10px auto;position: relative;height: 350px;}
+.vision .txt-box{width: 300px;height: 300px;border-radius: 50%;background: url(../images/vision1.png) center center no-repeat;background-size: cover;position: relative;top: 0;left: 30px;}
+.vision .txt-box p{color: #fff;width: 300px;height: 300px;display: flex;justify-content: center;align-items: center;text-align: center;font-size: 1.2rem;font-weight: 500;}
+.vision .txt-box:nth-child(2){background: url(../images/vision2.png) center center no-repeat;background-size: cover;left: 50%;transform: translateX(-50%);position: absolute;}
+.vision .txt-box:nth-child(3){background: url(../images/vision3.png) center center no-repeat;background-size: cover;left: auto;right: 30px;position: absolute;}
+
+.goals{background: url(../images/goals.png) center center no-repeat;background-size: contain;width: 880px;margin: 10px auto;height: 500px;position: relative;margin-bottom: 100px;}
+.goals .txt-box{position: absolute;display: flex;gap: 80px;}
+.goals .txt-box:nth-child(1){top: 72px;right: -127px;}
+.goals .txt-box:nth-child(2){top: 185px;right: 4px;}
+.goals .txt-box:nth-child(3){top: 300px;right: 131px;}
+.goals .txt-box:nth-child(4){top: 411px;left: 78px;}
+.goals .txt-box span{font-size: 2.2rem;font-weight: 900;color: #004693;}
+.goals .txt-box span::before{content: '';width: 20px;height: 20px;background-color: #CC0011;border-radius: 50%;position: absolute;top: 18px;left: 124px;}
+.goals .txt-box span::after{display: block;content: '';width: 35px;height: 2px;border-bottom: 3px dashed #CC0011;position: absolute;top: 25px;left: 133px;}
+.goals .txt-box p{font-size: 1.125rem;font-weight: 500;}
+
+.business{display: flex;flex-wrap: wrap;gap: 20px;margin: 10px auto;width: 1100px;justify-content: center;}
+.business .txt-box{width: 350px;height: 140px;background-color: #F1F6FC;border-radius: 35px;padding: 30px;display: flex;justify-content: space-around;align-items: center;}
+.business .txt-box p{text-align: center;font-size: 1.125rem;font-weight: 500;}
+
+/* 찾아오시는 길 */
+.map{display: flex;justify-content: center;}
+.map .txt-box{text-align: right;background-color: #002D5E;padding: 30px;color: #fff;width: 35%;}
+.map .txt-box h3{font-size: 1.7rem;font-weight: 600;padding-bottom: 25px;border-bottom: 1px #2a4174 dotted;margin-bottom: 25px;}
+.map .txt-box p{font-size: 1.25rem;font-weight: 300;}
+.map .txt-box p b{color: #ffab8e;}
+.map .txt-box p .material-icons{margin-right: 5px;color: #ffab8e;display: inline-block;vertical-align: sub;margin-top: 0;}
+.map .txt-box span{color: #A5C9F1;margin-top: 50px;display: block;font-size: 1.5rem;font-weight: 600;}
+
+.map iframe{width: 65%;}
+
+@media screen and (max-width:1600px) {
+    .goals .txt-box:nth-child(1){top: 68px;right: -90px;}
+    .goals .txt-box:nth-child(2){right: 43px;}
+    .goals .txt-box:nth-child(3){right: 174px;}
+    .goals .txt-box:nth-child(4){top: 416px;left: 78px;}
+    .goals .txt-box span::before{top: 16px;left: 117px;}
+    .goals .txt-box span::after{width: 29px;}
+    .goals .txt-box:nth-child(4) span::before{left: 124px;}
+}
+
+@media screen and (max-width:1200px) {
+    .history-wrap::before{display: none;}
+    .history .year::after{display: none;}
+
+    .goals{background: url(../images/goals2.png) left center no-repeat;background-size: contain;}
+    .goals .txt-box{flex-direction: column;gap: 0px;right: auto;width: 85%;}
+    .goals .txt-box span::before{left: -37px;}
+    .goals .txt-box span::after{display: none;left: -37px;}
+    .goals .txt-box:nth-child(1){top: 50px;left: 55px;}
+    .goals .txt-box:nth-child(2){top: 165px;left: 55px;}
+    .goals .txt-box:nth-child(3){top: 280px;left: 55px;}
+    .goals .txt-box:nth-child(4){top: 400px;left: 55px;}
+    .goals .txt-box:nth-child(4) span::before{left: -37px;}
+
+    .business{width: 100%}
+}
+
+@media screen and (max-width:900px) {
+    .welcome-txt{padding: 20px;margin: 50px 10px 10px;}
+    .welcome-txt::before{width: 60px;height: 60px;top: -10px;left: -10px;}
+
+    .history{flex-direction: column;padding: 20px 0;}
+    .history.mt50{margin-top: 20px !important;}
+    .history .year{width: 100%;margin-bottom: 30px;}
+    .history .his-list{width: 100%;}
+
+    .organization{margin-bottom: 1150px;width:auto}
+    .organization::before{top: 515px;width: 170px;height: 790px;border: 1px dashed #aaa;border-right: none;}
+    .organization::after{top: 250px;}
+    .oz-1{height: 250px;margin-bottom: 40px;}
+    .oz-1::before{top:512px;}
+    .oz-2{margin-bottom: 30px;}
+
+    .oz-wrap{top: 650px;left:50%;transform: translateX(-50%);width: 280px;}
+    .oz-wrap::before{top: -315px;left: 100%;width: 30px;height:360px;border: 1px dashed #aaa;border-left: none;}
+    .oz-wrap .oz-3, .oz-wrap2 .oz-3{margin-bottom: 20px;}
+    .oz-wrap::after, .oz-wrap2::after{top: 90px;}
+    .oz-wrap2{top:1260px;width: 280px;left: 50%;transform: translateX(-50%);}
+
+    .revision{gap: 10px;padding: 20px 5px;}
+    .revision .wrap p{margin-bottom: 5px;}
+
+    .vision{height: 700px;width: 100%;}
+    .vision .txt-box{width: 250px;height: 250px;position: relative;top: 0;left: 50%;transform: translateX(-50%);}
+    .vision .txt-box p{width: 250px;height: 250px;}
+    .vision .txt-box:nth-child(2){top: 210px;}
+    .vision .txt-box:nth-child(3){right: auto;left:50%;transform: translateX(-50%);top: 420px;}
+
+    .goals{width: 100%;}
+
+    .map{flex-direction: column-reverse;}
+    .map iframe{width: 100%;height: 400px;}
+    .map .txt-box{text-align: left;width: 100%;}
+    .map .txt-box br{display: none;}
+}
+
+/* ----------------------- 종목소개 ----------------------- */
+.sub-tit.event-intro{background: url(../images/sub-bg2-4.png) center center no-repeat;background-size: cover;}
+/* 루지유래 */
+.event-intro{display: flex;gap: 30px;}
+.event-intro .img-box,.event-intro .txt-box{width: 48%;margin-top: 20px;}
+.event-intro .img-box{height: 800px;overflow: hidden;background: url(../images/event-intro1-1.jpg) center center no-repeat;background-size: cover;}
+.event-intro2 .img-box{background: url(../images/event-intro2-1.jpg) top center no-repeat;background-size: cover;}
+.event-intro3 .img-box{background: url(../images/event-intro3-1.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro4 .img-box{background: url(../images/event-intro4-1.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro5 .img-box{background: url(../images/event-intro5-1.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro6 .img-box{background: url(../images/event-intro6-1.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro7 .img-box{background: url(../images/event-intro7-2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro8 .img-box{background: url(../images/event-intro8-2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro9 .img-box{background: url(../images/event-intro9-2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro10 .img-box{background: url(../images/origin2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro11 .img-box{background: url(../images/origin2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+.event-intro12 .img-box{background: url(../images/origin2.jpg) center center no-repeat;background-size: cover;height: 400px;}
+
+
+.event-intro .txt-box .tit{font-size: 1.7rem;margin-bottom: 20px;}
+.event-intro .txt-box .tit b{font-size: 3.5rem;color: #0066D5;font-weight: 700;display: block;font-family:'GmarketSans';line-height: 1;margin-bottom: 10px;}
+.event-intro .txt-box ul li{margin-bottom: 10px;font-size: 1.125rem;}
+.event-intro .txt-box ul li::before{font-family:'Material Icons';display:inline-block;content:'label_important';color:#5297E2;margin-right: 5px;vertical-align: bottom;}
+.txt-p{margin-bottom: 10px;font-size: 1.25rem;}
+.txt-p::before{font-family:'Material Icons';display:inline-block;content:'label';color: #F2784E;margin-right: 5px;vertical-align: bottom;}
+
+
+.down-wrap{display: flex;justify-content: space-between;gap: 50px;}
+.down-wrap .img-wrap{border: 1px solid #E6E6E6;text-align: center;}
+.down-wrap .img-wrap img{height: 100%;object-fit: contain;}
+.down-wrap .txt-wrap{display: flex;flex-direction: column;gap: 1.25rem;justify-content: space-around;}
+.down-wrap .txt-wrap p{font-size: 1.85rem;}
+.down-wrap .txt-wrap .down-wrap{gap: 1.25rem;justify-content: flex-start;}
+.download{display: flex;justify-content: space-between;padding: 20px;border: 1px solid #E6E6E6;gap: 3.125rem;font-size: 1.25rem;cursor: pointer;transition: all 0.3s;}
+.download:hover{border-color: #0066D5;color: #0066D5;}
+
+@media screen and (max-width:1200px) {
+    .down-wrap{flex-direction: column-reverse;}
+    .down-wrap .img-wrap{height: 400px;}
+    .down-wrap .txt-wrap .down-wrap{flex-direction: column;}
+}
+
+@media screen and (max-width:900px) {
+    .event-intro{flex-direction: column;}
+    .event-intro .img-box,.event-intro .txt-box{width: 100%;}
+    .event-intro .img-box{height: 300px;}
+    .event-intro2,.event-intro4,.event-intro6,.event-intro9,.event-intro11{flex-direction: column-reverse;}
+}
+
+/* ----------------------- 연맹소식 ----------------------- */
+.sub-tit.sub-info{background: url(../images/sub-bg3-2.png) center center no-repeat;background-size: cover;}
+.search-wrap{display: flex;justify-content: flex-end;align-items: center;position: relative;margin: 60px 0 40px;}
+.search-select{width: 80px;border:1px solid transparent;border-bottom: 1px solid #000;font-weight: 500;font-size: 1.125rem;margin-right: 10px;}
+.search-input{max-width: 320px;border:1px solid transparent;border-bottom: 1px solid #000;font-size: 1rem;}
+.search-input::placeholder{font-weight: 300;font-size: 1rem;}
+.search-btn{position: absolute;right: 5px;}
+
+/* board-view */
+.view-top h4{font-size: 2rem;font-weight: 500;margin-bottom: 15px;}
+.view-top span{font-size: 1.125rem;font-weight: 300;margin-bottom: 30px;margin-right: 5px;}
+.view-top .material-icons{display: inline-block;vertical-align: text-top;}
+.view-mid{border-top: 1px solid #aaa;border-bottom: 1px solid #aaa;padding: 50px 10px;}
+.view-bot{display: flex;font-size: 1.125rem;padding: 30px 0;border-bottom: 1px solid #aaa;align-items: center;}
+.view-bot strong{color: #F2784E;margin-left: 5px;}
+.attachment{font-weight: 300;margin: 0 5px 0 20px;display: flex;gap: 5px;align-items: center;cursor: pointer;}
+.view-bot p:hover{text-decoration: underline;}
+
+.view-nav{display: flex;justify-content: space-between;align-items: center;margin-top: 50px;font-size: 1.5rem;}
+.view-nav p:hover{text-decoration: underline;}
+.list-btn{background-color: #eee;color: #5E5E5E;padding: 20px;font-size: 1.125rem;font-weight: 500;}
+.list-btn:hover{background-color: #004693;color: #fff;}
+.list-move{width: 40%;cursor: pointer;display: flex;align-items: center;justify-content: flex-end;gap: 5px;}
+.list-move.lightgray{justify-content: flex-start;}
+.list-move .material-icons{font-size: 1.875rem;}
+
+@media screen and (max-width:1200px) {
+    .view-bot{flex-direction: column;align-items: flex-start;}
+    .attachment{margin: 5px 0 0;}
+}
+
+@media screen and (max-width:900px) {
+    .list-move p{display: none;}
+}
+
+/* ----------------------- 팀/선수정보 ----------------------- */
+.sub-tit.sub-team{background: url(../images/sub-bg4-4.png) center center no-repeat;background-size: cover;}
+.sub-tab{display: flex;justify-content: center;align-items: center;gap: 20px;}
+.sub-tab .tab{display: flex;justify-content: center;align-items: center;border: 1px solid #E6E6E6;border-radius: 11px;width: 260px;color: #aaa;padding: 1.25rem;font-size: 1.125rem;font-weight: 500;}
+.sub-tab .tab:hover{background-color: #F2784E;color: #fff;font-weight: 600;}
+.sub-tab .tab.on{background-color: #F2784E;color: #fff;font-weight: 600;}
+
+.sub-tab.eng{display: flex;align-items: center;gap: 10px;justify-content: flex-start;}
+.sub-tab.eng .tab{display: flex;justify-content: center;align-items: center;border: 1px solid #E6E6E6;border-radius: 4px;width: 120px;color: #aaa;padding: 7px;font-size: 0.9rem;font-weight: 500;}
+.sub-tab.eng .tab:hover{border: 1px solid #CC0011;color: #CC0011;font-weight: 600;background-color: #fff;}
+.sub-tab.eng .tab.on{border: 1px solid #CC0011;color: #CC0011;font-weight: 600;background-color: #fff;}
+
+
+.team-area{display: flex;flex-wrap: wrap;justify-content: space-between;gap: 50px;margin-top: 20px;}
+.team{display: flex;border-radius: 15px;box-shadow: 0px 3px 10px 0px rgba(0 0 0 / 20%);width: 47%;padding: 50px;gap: 60px;background: url(../images/team-bg.png) #fff no-repeat 10px 10px;background-size: contain;position: relative;}
+.team::after{content: 'KOREA LUGE FEDERATION';position: absolute;right: 15px;bottom: 5px;color: #E4EBF3;font-family: 'GmarketSans';font-weight: 700;font-size: 1.5rem;}
+.team .img-area{width: 130px;}
+.team .txt-area{width: calc(100% - 130px);}
+.team .txt-area h5{font-size: 1.5rem;font-weight: 600;margin-bottom: 20px;}
+.team .txt-area .txt-wrap{display: flex;gap: 50px;}
+.team .txt-area .wrap{display: flex;flex-direction: column;gap: 10px;white-space: break-spaces;}
+.team .txt-area .wrap p{word-break: break-all;}
+.team .txt-area .wrap span{color: #004693;font-weight: 500;}
+
+
+@media screen and (max-width:1200px) {
+    .team{gap: 30px;padding: 30px;padding-bottom: 50px;}
+    .team .txt-area .txt-wrap{gap: 20px;}
+}
+
+@media screen and (max-width:900px) {
+    .sub-tab{gap: 10px;flex-wrap: wrap;}
+    .sub-tab .tab{width: 48%;}
+
+    .team-area{gap: 40px;}
+    .team{width: 45%;flex-direction: column;align-items: center;}
+    .team::after{display: none;}
+    .team .txt-area{width: 100%;}  
+}
+
+@media screen and (max-width:600px) {
+    .team{width: 100%;}
+}
+
+
+/* ----------------------- 연맹소식 ----------------------- */
+.sub-tit.sub-news{background: url(../images/sub-bg5-4.png) center center no-repeat;background-size: cover;}
+.view-top .tag{margin-bottom: 10px;}
+.schedual{display: flex;justify-content: space-between;}
+.schedual .img-area,.schedual .txt-area{width: 48%;}
+
+@media screen and (max-width:900px) {
+    .sub-tab{gap: 10px;flex-wrap: wrap;}
+    .sub-tab .tab{width: 48%;}
+
+    .schedual{flex-direction: column;}
+    .schedual .img-area,.schedual .txt-area{width: 100%;text-align: center;}
+    .schedual .img-area img{width: 80%;margin-bottom: 20px;}
+}
+
+/* 갤러리게시판 */
+.sub-tit.sub-community{background: url(../images/sub-bg6-3.png) center center no-repeat;background-size: cover;}
+.gallery-list{width: 100%;height: auto;display: flex;flex-wrap: wrap;gap: 50px 1%;}
+.gallery-list li{width: 24%;}
+.gallery-list li a{display: flex;flex-direction: column;width: 100%;border: 1px solid #E6E6E6;}
+.gallery-list li a .img-box{display: flex;justify-content: center;width: 100%;align-items: center;height: 200px;overflow: hidden;}
+.gallery-list li a .img-box img{height:100%;width: 100%;transition: all 0.3s;}
+.gallery-list li a .txt-box {padding: 20px;height: 150px;display: flex;flex-direction: column;justify-content: space-between;}
+.gallery-list li a .txt-box h5{font-size: 1.125rem;word-break: break-all;font-weight: 500;}
+.gallery-list li a .txt-box p{font-size: 1rem;color: #aaa;text-align: right;font-weight: 300;}
+
+.gallery-list li a:hover{box-shadow: 0 7px 20px rgba(0 0 0 / 20%);background: #eef1f6;}
+.gallery-list li a:hover .img-box img{transform: scale(1.1);}
+.gallery-list li a:hover .txt-box h5{color: #004693;}
+.gallery-list li a:hover .txt-box p{color: #5297E2;}
+
+@media screen and (max-width:1200px) {
+    .gallery-list li{width: 32%;}
+}
+
+@media screen and (max-width:900px) {
+    .gallery-list li{width: 48%;}
+}
+
+@media screen and (max-width:600px) {
+    .gallery-list li{width: 100%;}
+}
+
+/* pagination */
+.pagination{display: flex;justify-content: center;align-items: center;margin-top: 80px;}
+.pagination ul{display: flex;align-items: center;}
+.pagination ul li a{color: #AAAAAA;font-size: 1.125rem;padding: 15px;}
+.pagination ul li a:hover{color: #000;border-color: #000;}
+.pagination ul li a.on{color: #000;}
+.pagination .page-btn{border: 1px solid #AAAAAA;border-radius: 50%;padding: 5px;display: flex;justify-content: center;align-items: center;margin: 0 15px;}
+
+
