@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>대한루지경기연맹</title>
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- jquery -->
+	  <script src="../js/jquery-1.11.2.min.js"></script>
+    <script defer src="../js/web.js?v1.111"></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/swiper/swiper.min.js"></script>
+
+    <!-- 스크롤애니메이션(aos.css cdn) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+	<!-- css -->
+	<link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/sub.css">
+</head>	
+  
+  <!-- header	-->
+	<header class="header">
+        <div class="header-left">
+            <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+        </div>
+        <div class="header-mid">
+            <nav class="menu">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="../contents/sub1.html">연맹소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.html">환영사</a></li>
+                                <li><a href="../contents/sub1-2.html">연혁</a></li>
+                                <li><a href="../contents/sub1-3.html">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.html">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.html">조직도</a></li>
+                                <li><a href="../contents/sub1-5.html">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.html">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.html">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub2.html">종목소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.html">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.html">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/board-list.html">정보알림</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.html">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="../contents/sub4.html">팀/선수정보</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.html">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.html">상비군</a></li>
+                                <li><a href="../contents/sub4-3.html"">유스</a></li>
+                                <li><a href="../contents/sub4-4.html">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub5.html">연맹소식</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="../contents/sub6-5.html">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/gallery-list.html">커뮤니티</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.html">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://www.instagram.com/korealuge/" target="_blank"><img src="../images/insta.png" alt="insta"></a>    
+                <a href="https://www.youtube.com/@Korealuge " target="_blank"><img src="../images/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="side-btn"><span class="material-icons">menu</span></div>
+            <div class="side-bar">
+                <a href="https://g1.sports.or.kr/index.do" class="side-bar-btn bg-navy" target="_blank"><span class="material-icons">contact_emergency</span>경기인<br>등록 및<br>증명서<br>발급</a>
+                <div class="side-bar-btn"><span class="material-icons">calendar_month</span>주요일정</div>
+                <div class="side-bar-btn bg-darkgray" id="topBtn"><span class="material-icons">arrow_upward</span>TOP</div>
+            </div>
+        </div>
+	</header> 
+
+    <div class="sitemap">
+        <div class="top-area">
+            <div class="sitemap-tit">
+                <h2>sitemap</h2>
+            </div>
+            <div class="close-btn">
+                <span class="material-icons">close</span>
+            </div>
+        </div>
+            <div class="sitemap-menu">
+                <ul class="sitemap-nav">
+                    <li>
+                        <a href="javascript:void(0);">연맹소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.html">환영사</a></li>
+                                <li><a href="../contents/sub1-2.html">연혁</a></li>
+                                <li><a href="../contents/sub1-3.html">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.html">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.html">조직도</a></li>
+                                <li><a href="../contents/sub1-5.html">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.html">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.html">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">종목소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.html">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.html">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">정보알림<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.html">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="javascript:void(0);">팀/선수정보<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.html">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.html">상비군</a></li>
+                                <li><a href="../contents/sub4-3.html">유스</a></li>
+                                <li><a href="../contents/sub4-4.html">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">연맹소식<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="javascript:void(0);">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">커뮤니티<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.html">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	<!-- end:header -->  
+
+<!-- main-visual -->
+<section class="main-visual">
+    <div class="w1400">
+        <div class="main-txt" data-aos="fade-up" data-aos-duration="1000">
+            <h3>korea luge <br>federation</h3>
+            <h2>대한루지<br>경기연맹</h2>
+        </div>
+        <div class="slide-controller" data-aos="fade-up" data-aos-duration="1500">
+            <div class="swiper-progress-area">
+                <div class="swiper-progress-bar"></div>
+            </div>
+            <div class="swiper-btn-area">
+                <div class="swiper-action play"><a href="javascript:void(0);"><span class="material-icons">play_arrow</span></a></div>
+                <div class="swiper-action pause"><a href="javascript:void(0);"><span class="material-icons">pause</span></a></div>
+                <div class="swiper-btn swiper-btn-prev"><span class="material-icons">chevron_left</span></div>
+                <div class="swiper-count"></div>
+                <div class="swiper-btn swiper-btn-next"><span class="material-icons">chevron_right</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img-box"><video src="../images/main-video2.mp4" autoplay muted loop class="video"></video></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box"><video src="../images/main-video.mp4" autoplay muted loop class="video"></video></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box"><img src="../images/main-img2.png" alt="슬라이드이미지"></div>
+            </div>
+        </div>
+
+        <h3 class="bg-txt">korea luge federation</h3>
+    </div>
+</section>
+
+<!-- schedule -->
+<section class="schedule pd70">
+    <div class="w1400">
+        <div class="top-area" data-aos="fade-up" data-aos-duration="2000">
+            <div class="tit-area">
+                <h3 class="title_st1">경기일정</h3>
+                <div class="bt_st1">more<span class="material-icons">east</span></div>
+            </div>
+        </div>
+        <div class="content-area mt40" id="menu_1" style="display:block;" data-aos="fade-up" data-aos-duration="1000">
+            <div class="btn-area">
+                <div class="tabs">
+                    <a href="javascript:void(0);" class="tab active" data-tab1="tab_1">전체대회</a>
+                    <a href="javascript:void(0);" class="tab" data-tab1="tab_2">국내대회</a>
+                    <a href="javascript:void(0);" class="tab" data-tab1="tab_3">국제대회</a>
+                </div>
+            </div>
+
+			<style>
+				.tab_content{display:none;}
+				.tab_content.active{display:block;}
+			</style>
+
+            <!-- Swiper -->
+            <div id="tab_1" class="swiper slider-schedule tab_content active">
+                <div class="btn-wrap tab1">
+                    <div class="swiper-btn-prev"><span class="material-icons">west</span></div>
+                    <div class="swiper-btn-next"><span class="material-icons">east</span></div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 104회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 103회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 102회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+                </div><!-- \\swiper-wrapper -->
+            </div><!-- \\tab_1 -->
+
+			<!-- Swiper -->
+            <div id="tab_2" class="swiper slider-schedule2 tab_content">
+                <div class="btn-wrap tab2">
+                    <div class="swiper-btn-prev"><span class="material-icons">west</span></div>
+                    <div class="swiper-btn-next"><span class="material-icons">east</span></div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 104회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 103회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 102회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+                </div><!-- \\swiper-wrapper -->
+            </div><!-- \\tab_2 -->
+
+			<!-- Swiper -->
+            <div id="tab_3" class="swiper slider-schedule3 tab_content">
+                <div class="btn-wrap tab3">
+                    <div class="swiper-btn-prev"><span class="material-icons">west</span></div>
+                    <div class="swiper-btn-next"><span class="material-icons">east</span></div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 104회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 103회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+					<div class="swiper-slide">
+                        <a href="javascript:void(0);" class="slider-content">
+                            <span class="tag">국내대회</span>
+                            <h4 class="tit">제 102회 전국 동계체육대회</h4>
+                            <div class="txt">
+                                <p>대회기간<i>|</i>2023.02.17~2023.02.18</p>
+                                <p>대회장소<i>|</i>강원도 평창</p>
+                            </div>
+                            <div class="bt_st2 mt20">자세히 보기</div>
+                        </a>
+                    </div><!-- \\swiper-slide -->
+                </div><!-- \\swiper-wrapper -->
+            </div><!-- \\tab_3 -->
+
+    </div>
+
+    </div>
+</section>
+
+<!-- news -->
+<section class="news pd70">
+    <div class="w1400">
+        <div class="top-area mb30" data-aos="fade-up" data-aos-duration="1000">
+            <div class="tit-area">
+                <h3 class="title_st1">보도자료</h3>
+                <div class="bt_st1">more<span class="material-icons">east</span></div>
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="contents on" id="tab1">
+                <div class="txt-area" data-aos="fade-right" data-aos-duration="1000">
+                    <h4 class="tit">남매 루지 국가대표 탄생… “세계 무대서 한국팀 각인 시킬 것”</h4>
+                    <p class="txt">한국 썰매 대표팀은 2018 평창 겨울올림픽 때 남자 스켈레톤에서 윤성빈(29)이 금메달을 차지한 데 이어 봅슬레이 남자 4인승에서도 은메달을 따냈다.
+
+                        썰매 세 종목 중 유일하게 ‘안방 노메달’의 아쉬움을 삼켜야 했던 루지는 평창 올림픽 유산으로 아시아에서 처음 열리게 된 2024 강원 동계청소년올림픽에서 새 도전에 나선다.
+                    </p>
+                </div>
+                <div class="img-area" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../images/img-01.jpg" alt="보도자료이미지">
+                </div>
+            </div>
+            <div class="contents" id="tab2">
+                <div class="txt-area" data-aos="fade-right" data-aos-duration="1000">
+                    <h4 class="tit">남매 루지 국가대표 탄생… “세계 무대서 한국팀 각인 시킬 것”</h4>
+                    <p class="txt">한국 썰매 대표팀은 2018 평창 겨울올림픽 때 남자 스켈레톤에서 윤성빈(29)이 금메달을 차지한 데 이어 봅슬레이 남자 4인승에서도 은메달을 따냈다.썰매 세 종목 중 유일하게 ‘안방 노메달’의 아쉬움을 삼켜야 했던 루지는 평창 올림픽 유산으로 아시아에서 처음 열리게 된 2024 강원 동계청소년올림픽에서 새 도전에 나선다.
+                    </p>
+                </div>
+                <div class="img-area" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../images/img-02.jpg" alt="보도자료이미지">
+                </div>
+            </div>
+            <div class="contents" id="tab3">
+                <div class="txt-area" data-aos="fade-right" data-aos-duration="1000">
+                    <h4 class="tit">남매 루지 국가대표 탄생… “세계 무대서 한국팀 각인 시킬 것”</h4>
+                    <p class="txt">한국 썰매 대표팀은 2018 평창 겨울올림픽 때 남자 스켈레톤에서 윤성빈(29)이 금메달을 차지한 데 이어 봅슬레이 남자 4인승에서도 은메달을 따냈다.썰매 세 종목 중 유일하게 ‘안방 노메달’의 아쉬움을 삼켜야 했던 루지는 평창 올림픽 유산으로 아시아에서 처음 열리게 된 2024 강원 동계청소년올림픽에서 새 도전에 나선다.
+                    </p>
+                </div>
+                <div class="img-area" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../images/img-03.jpg" alt="보도자료이미지">
+                </div>
+            </div>
+            <div class="contents" id="tab4">
+                <div class="txt-area" data-aos="fade-right" data-aos-duration="1000">
+                    <h4 class="tit">남매 루지 국가대표 탄생… “세계 무대서 한국팀 각인 시킬 것”</h4>
+                    <p class="txt">한국 썰매 대표팀은 2018 평창 겨울올림픽 때 남자 스켈레톤에서 윤성빈(29)이 금메달을 차지한 데 이어 봅슬레이 남자 4인승에서도 은메달을 따냈다.썰매 세 종목 중 유일하게 ‘안방 노메달’의 아쉬움을 삼켜야 했던 루지는 평창 올림픽 유산으로 아시아에서 처음 열리게 된 2024 강원 동계청소년올림픽에서 새 도전에 나선다.
+                    </p>
+                </div>
+                <div class="img-area" data-aos="fade-left" data-aos-duration="1500">
+                    <img src="../images/img-03.jpg" alt="보도자료이미지">
+                </div>
+            </div>
+            <div class="swiper thumbnail slider-thumbnail" data-aos="fade-up" data-aos-duration="1000">
+                <div class="swiper-btn-area">
+                    <div class="swiper-count"></div>
+                    <div class="swiper-btn-st3">
+                        <div class="swiper-btn-prev"><span class="material-icons">arrow_back</span></div>
+                        <div class="swiper-btn-next"><span class="material-icons">arrow_forward</span></div>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <a href="javascript:void(0);" class="on swiper-slide"data-tab1="tab1"><img src="../images/img-01.jpg" alt="보도자료썸네일"></a>
+                    <a href="javascript:void(0);" class="swiper-slide"data-tab1="tab2"><img src="../images/img-02.jpg" alt="보도자료썸네일"></a>
+                    <a href="javascript:void(0);" class="swiper-slide"data-tab1="tab3"><img src="../images/img-03.jpg" alt="보도자료썸네일"></a>
+                    <a href="javascript:void(0);" class="swiper-slide"data-tab1="tab4"><img src="../images/img-03.jpg" alt="보도자료썸네일"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- notice -->
+<section class="notice">
+    <div class="w1400">
+        <div class="content-area">
+            <div class="contents" data-aos="fade-right" data-aos-duration="1000">
+                <div class="tit-area">
+                    <h3 class="title_st2">공지사항</h3>
+                    <div class="bt_st3">more<span class="material-icons">east</span></div>
+                </div>
+                <div class="txt-area">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contents" data-aos="fade-right" data-aos-duration="1500">
+                <div class="tit-area">
+                    <h3 class="title_st2">경영공시</h3>
+                    <div class="bt_st3">more<span class="material-icons">east</span></div>
+                </div>
+                <div class="txt-area">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="date">
+                                    <span>20</span>
+                                    <p>2021.10</p>
+                                </div>
+                                <p>2023년도 생활지원금 지급대상자 추가 추천 요청</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- banner -->
+<div class="banner">
+    <div class="w1400">
+        <div class="wrap">
+            <div class="tit">관련기관</div>
+            <div class="img-wrap">
+                <a href="https://www.fil-luge.org/de/startseite" class="banner-img" target="_blank"><img src="../images/banner1-1.png" alt="배너"></a>
+                <a href="https://www.sports.or.kr/index.do"  class="banner-img" target="_blank"><img src="../images/banner4.png" alt="배너"></a>
+                <a href="https://www.mcst.go.kr/kor/main.jsp"  class="banner-img" target="_blank"><img src="../images/banner3.png" alt="배너"></a>
+                <a href="https://www.k-sec.or.kr/front/main/main.do"  class="banner-img" target="_blank"><img src="../images/banner2.png" alt="배너"></a>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="tit">후원사</div>
+            <div class="img-wrap">
+                <a href="https://www.hanafn.com/main/index.do#skipNavi"  class="banner-img" target="_blank"><img src="../images/banner5.png" alt="배너"></a>
+                <a href="https://www.kdhc.co.kr/kdhc/main/main.do"  class="banner-img" target="_blank"><img src="../images/banner6.png" alt="배너"></a>
+                <a href="https://www.prospecs.com/display.do?cmd=mallMain"  class="banner-img" target="_blank"><img src="../images/banner7.png" alt="배너"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="txt">
+        <a href="javascript:void(0);" class="info">개인정보처리방침</a>
+        <address>
+            <em>서울특별시 송파구 올림픽로 424 벨로드롬경기장 동계종목경단체사무국 102호 TEL : 02.413.9917 FAX : 02.413.9918</em>
+            <cite>COPYRIGHT(C) 2010 대한루지경기연맹 ALL RIGHTS RESERVED</cite>
+        </address>
+    </div>
+    <div class="img">
+        <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+    </div>
+</footer>
+<!-- 스크롤애니메이션(aos.css cdn) -->
+<script>
+    AOS.init();
+</script>
