@@ -719,23 +719,27 @@ section.main {
 
 #graphic .mid .right {
     width: 80%;
-    height: 120rem;
+    height: auto;
     background-color: #fff;
     padding: 2.5rem;
     font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 #graphic .mid .right .img {
     display: inline-block;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
     position: relative;
     cursor: pointer;
+    height: 19rem;
+    overflow: hidden;
+    width: calc((100% - 2rem) / 3););
+    border: 2px solid #000;
 }
 
 #graphic .mid .right img {
-    width: 23rem;
-    border: 2px solid #000;
+    width: 100%;
     display: block;
 }
 #graphic .mid .right span {
@@ -762,6 +766,7 @@ section.main {
     transform: translatex(-50%);
     display: none;
     z-index: 1000;
+    height: 90%;
 }
 .modal-contents .contents .top h3{
     width: 90%;
@@ -771,7 +776,7 @@ section.main {
 .modal-contents .contents .bot{
     width: 100%;
     border: 2px #000 solid;
-    height: 50rem;
+    height: 90%;
     overflow-y: scroll;
     background-color: #fff;
     padding: 5%;
