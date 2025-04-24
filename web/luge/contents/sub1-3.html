@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>대한루지경기연맹</title>
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- jquery -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+    <script defer src="../js/web.js?v1.111"></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/swiper/swiper.min.js"></script>
+
+    <!-- 스크롤애니메이션(aos.css cdn) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+	<!-- css -->
+	<link rel="stylesheet" href="../css/reset.css?v1.111111"> <!-- 수정x -->
+    <link rel="stylesheet" href="../css/font.css?v1.111"> <!-- 수정x -->
+    <link rel="stylesheet" href="../css/common.css?v1.2211111111"> <!-- 수정o -->
+	<link rel="stylesheet" href="../css/main.css?v1.221111111"> <!-- 수정o -->
+    <link rel="stylesheet" href="../css/sub.css?v1.211111111111111"> <!-- 수정o -->
+</head>	<!-- header	-->
+	<header class="header">
+        <div class="header-left">
+            <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+        </div>
+        <div class="header-mid">
+            <nav class="menu">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="../contents/sub1.php">연맹소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.php">환영사</a></li>
+                                <li><a href="../contents/sub1-2.php">연혁</a></li>
+                                <li><a href="../contents/sub1-3.php">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.php">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.php">조직도</a></li>
+                                <li><a href="../contents/sub1-5.php">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.php">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.php">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub2.php">종목소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.php">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.php">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/board-list.php">정보알림</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.php">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="../contents/sub4.php">팀/선수정보</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.php">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.php">상비군</a></li>
+                                <li><a href="../contents/sub4-3.php"">유스</a></li>
+                                <li><a href="../contents/sub4-4.php">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub5.php">연맹소식</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="../contents/sub6-5.php">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/gallery-list.php">커뮤니티</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.php">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://www.instagram.com/korealuge/" target="_blank"><img src="../images/insta.png" alt="insta"></a>    
+                <a href="https://www.youtube.com/@Korealuge " target="_blank"><img src="../images/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="side-btn"><span class="material-icons">menu</span></div>
+            <div class="side-bar">
+                <a href="https://g1.sports.or.kr/index.do" class="side-bar-btn bg-navy" target="_blank"><span class="material-icons">contact_emergency</span>경기인<br>등록 및<br>증명서<br>발급</a>
+                <div class="side-bar-btn"><span class="material-icons">calendar_month</span>주요일정</div>
+                <div class="side-bar-btn bg-darkgray" id="topBtn"><span class="material-icons">arrow_upward</span>TOP</div>
+            </div>
+        </div>
+	</header> 
+
+    <div class="sitemap">
+        <div class="top-area">
+            <div class="sitemap-tit">
+                <h2>sitemap</h2>
+            </div>
+            <div class="close-btn">
+                <span class="material-icons">close</span>
+            </div>
+        </div>
+            <div class="sitemap-menu">
+                <ul class="sitemap-nav">
+                    <li>
+                        <a href="javascript:void(0);">연맹소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.php">환영사</a></li>
+                                <li><a href="../contents/sub1-2.php">연혁</a></li>
+                                <li><a href="../contents/sub1-3.php">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.php">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.php">조직도</a></li>
+                                <li><a href="../contents/sub1-5.php">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.php">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.php">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">종목소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.php">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.php">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">정보알림<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.php">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="javascript:void(0);">팀/선수정보<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.php">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.php">상비군</a></li>
+                                <li><a href="../contents/sub4-3.php">유스</a></li>
+                                <li><a href="../contents/sub4-4.php">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">연맹소식<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="javascript:void(0);">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">커뮤니티<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.php">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	<!-- end:header -->  
+<section class="sub-tit intro">
+    <div class="w90">
+        <div class="w1400">
+            <h2 class="title_st3">연맹소개</h2>
+        </div>
+    </div>
+    <nav class="sub-menu">
+        <div class="w1400 w100">
+            <ul class="sub-nav">
+                <li class="home-btn"><a href="../"><img src="../images/home-btn.png" alt="홈버튼"></a></li>
+                <li class="sub-nav-wrap">
+                    <div class="sub-nav-tit">
+                        <a href="../contents/sub1.php">연맹소개</a><span class="material-icons">expand_more</span>
+                    </div>
+                    <ul class="sub-nav-list">
+                        <li><a href="../contents/sub2.php">종목소개</a></li>
+                        <li><a href="../contents/board-list.php">정보알림</a></li>
+                        <li><a href="../contents/sub4.php">팀/선수정보</a></li>
+                        <li><a href="javascript:();">연맹소식</a></li>
+                        <li><a href="../contents/gallery-list.php">커뮤니티</a></li>
+                    </ul>
+                </li>
+                <li class="sub-nav-wrap">
+                    <div class="sub-nav-tit">
+                        <a href="../contents/sub1.php">환영사</a><span class="material-icons">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="sub-nav-list">
+                        <li><a href="../contents/sub1-2.php">연혁</a></li>
+                        <li><a href="../contents/sub1-3.php">임원소개</a></li>
+                        <li><a href="../contents/sub1-8.php">전국시도연맹</a></li>
+                        <li><a href="../contents/sub1-4.php">조직도</a></li>
+                        <li><a href="../contents/sub1-5.php">연맹규정</a></li>
+                        <!-- <li><a href="../contents/sub1-6.php">목표 및 비전</a></li> -->
+                        <li><a href="../contents/sub1-7.php">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+
+
+<!-- Executive -->
+<div class="sub-tab eng w1400 mt30">
+	<a href="javascript:void(0);" class="tab on" data-tab="tab-con_1">KOR</a>
+    <a href="javascript:void(0);" class="tab" data-tab="tab-con_2">ENG</a>
+</div>
+
+<section class="sub w1400 eng">
+    <div class="tab-con on" id="tab-con_1">
+        <h3 class="title_st4">임원소개</h3>
+        <div class="table-area mt70">
+            <table class="table_st1 mt20">
+                <colgroup>
+                    <col width="10%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>순번</th>
+                        <th>직위</th>
+                        <th>성명</th>
+                        <th>직업 및 직위</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>회장</td>
+                        <td>박지은</td>
+                        <td class="t_left">대구과학대학교 총장</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>실무부회장</td>
+                        <td>임순길</td>
+                        <td class="t_left">용인대학교 체육학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>부회장</td>
+                        <td>이태영</td>
+                        <td class="t_left">前 대한체육회 이사</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>부회장</td>
+                        <td>이원태</td>
+                        <td class="t_left">前 금호아시아나그룹 부회장 / 現 금호건설 고문</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>부회장</td>
+                        <td>김천수</td>
+                        <td class="t_left">강원도루지경기연맹 회장 / (주)바른식 대표이사</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>부회장</td>
+                        <td>최재원</td>
+                        <td class="t_left">서울아산병원 대외협력실장 / 건강증진센터 소장</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>이사</td>
+                        <td>김경일</td>
+                        <td class="t_left">(주)메디케어 상임고문</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>이사</td>
+                        <td>김미숙</td>
+                        <td class="t_left">서울특별시루지경기연맹 회장 / 성신여자대학교 무용예술학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>이사</td>
+                        <td>김창선</td>
+                        <td class="t_left">동덕여자대학교 체육학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>이사</td>
+                        <td>박 진</td>
+                        <td class="t_left">서울여자대학교 스포츠운동과학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>이사</td>
+                        <td>육동원</td>
+                        <td class="t_left">연세대학교 체육교육학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>이사</td>
+                        <td>이건주</td>
+                        <td class="t_left">PG물산 전무이사</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>이사</td>
+                        <td>이종우</td>
+                        <td class="t_left">동국대학교 경찰행정학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>이사</td>
+                        <td>주석범</td>
+                        <td class="t_left">대구과학대학교 레저스포츠학과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>이사</td>
+                        <td>황승현</td>
+                        <td class="t_left">경북대학교 레저스포츠학과 조교수</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>이사</td>
+                        <td>민석기</td>
+                        <td class="t_left">한국스포츠정책과학원 책임연구위원</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>이사</td>
+                        <td>이연정</td>
+                        <td class="t_left">대한체육회 여성체육위원회 위원/ 프로골퍼</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>이사</td>
+                        <td>이홍걸</td>
+                        <td class="t_left">법무법인 참진 변호사</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>이사</td>
+                        <td>최형준</td>
+                        <td class="t_left">단국대학교 체육교육과 교수</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>이사</td>
+                        <td>주세기</td>
+                        <td class="t_left">국가대표 지도자</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>이사</td>
+                        <td>성은령</td>
+                        <td class="t_left">前 국가대표 선수</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>행정감사</td>
+                        <td>이종찬</td>
+                        <td class="t_left">울산광역시루지경기연맹 회장</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>회계감사</td>
+                        <td>이재수</td>
+                        <td class="t_left">회계법인 새시대 부대표</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="tab-con" id="tab-con_2">
+        <h3 class="title_st4">Executive members</h3>
+        <div class="table-area mt70">
+            <table class="table_st1 mt20">
+                <colgroup>
+                    <col width="10%">
+                    <col width="20%">
+                    <col width="20%">
+                    <col width="">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Position</th>
+                        <th>Name</th>
+                        <th>Occupation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>President</td>
+                        <td>Park Ji-eun</td>
+                        <td class="t_left">President of Taegu Science University</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Working Vice president</td>
+                        <td>Lim Soon-gil</td>
+                        <td class="t_left">Professor of sports department, Yongin University</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Vice president</td>
+                        <td>Lee Tae-young</td>
+                        <td class="t_left">Former Korean Sports Olympic Committee board member</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vice president</td>
+                        <td>Lee Won-tae</td>
+                        <td class="t_left">Former Vice president of KUMHO ASIANA group/Former advisor of KUMHO E&C</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Vice president</td>
+                        <td>Kim Cheon-su</td>
+                        <td class="t_left">President of Gangwon-do Luge Federation/CEO of Barunshik Corp</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Vice president</td>
+                        <td>Choi Jae-won</td>
+                        <td class="t_left">Head of coordination office and manager of Health promotion center in Seoul Asan medical center</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Director</td>
+                        <td>Kim Kyun-gil</td>
+                        <td class="t_left">Advisor of Medicare Corp.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Director</td>
+                        <td>Kim M-isook</td>
+                        <td class="t_left">President of Seoul Luge Federation/Professor of dance&art department, Sungshin Women’s university</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Director</td>
+                        <td>Kim Chang-sun</td>
+                        <td class="t_left">Professor of sports department, Dongduk Women’s University</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Director</td>
+                        <td>Park Jin</td>
+                        <td class="t_left">Professor of sports science department, Seoul Women’s University</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Director</td>
+                        <td>Yuk Dong-won</td>
+                        <td class="t_left">Professor of Physical education department, Yonsei University</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Director</td>
+                        <td>Lee Geon-ju</td>
+                        <td class="t_left">Executive director of PG production</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Director</td>
+                        <td>Lee Jong-woo</td>
+                        <td class="t_left">Professor of police admistration  department, Dongguk University</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Director</td>
+                        <td>Joo Seok-beom</td>
+                        <td class="t_left">Professor of Leisure sports department, Taegu science University</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Director</td>
+                        <td>Hwang Seung-hyun</td>
+                        <td class="t_left">Professor of Leisure sports department, Kyungpook national  University</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Director</td>
+                        <td>Min Suk-gi</td>
+                        <td class="t_left">Fellow researcher of Korea Institute of Sport Science</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Director</td>
+                        <td>Lee Yeon-Jeong</td>
+                        <td class="t_left">Member of Korean Sports Olympic Committee Women sport committee/Professional Golfer</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Director</td>
+                        <td>Lee Hong-gul</td>
+                        <td class="t_left">Lawyer of Chamjin</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Director</td>
+                        <td>Choi Hyeong-jun</td>
+                        <td class="t_left">Professor of physical education department, Dankook University</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Director</td>
+                        <td>Joo Sekee</td>
+                        <td class="t_left">Coach of Korean Luge team</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Director</td>
+                        <td>Sung Eun-ryung</td>
+                        <td class="t_left">Former Luge National athlete</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>Administrative auditor</td>
+                        <td>Lee Jong-chan</td>
+                        <td class="t_left">President of Ulsan Luge Federation</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Accounting auditor</td>
+                        <td>Lee Je-soo</td>
+                        <td class="t_left">A deputy representative of Saesidae Accoungting Corporation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+    <div class="txt">
+        <a href="javascript:void(0);" class="info">개인정보처리방침</a>
+        <address>
+            <em>서울특별시 송파구 올림픽로 424 벨로드롬경기장 동계종목경단체사무국 102호 TEL : 02.413.9917 FAX : 02.413.9918</em>
+            <cite>COPYRIGHT(C) 2010 대한루지경기연맹 ALL RIGHTS RESERVED</cite>
+        </address>
+    </div>
+    <div class="img">
+        <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+    </div>
+</footer>
+<!-- aos(스크롤애니메이션) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
