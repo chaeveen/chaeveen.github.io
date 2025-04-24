@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>대한루지경기연맹</title>
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- jquery -->
+	<script src="../js/jquery-1.11.2.min.js"></script>
+    <script defer src="../js/web.js?v1.111"></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/swiper/swiper.min.js"></script>
+
+    <!-- 스크롤애니메이션(aos.css cdn) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+	<!-- css -->
+	<link rel="stylesheet" href="../css/reset.css?v1.111111"> <!-- 수정x -->
+    <link rel="stylesheet" href="../css/font.css?v1.111"> <!-- 수정x -->
+    <link rel="stylesheet" href="../css/common.css?v1.2211111111"> <!-- 수정o -->
+	<link rel="stylesheet" href="../css/main.css?v1.221111111"> <!-- 수정o -->
+    <link rel="stylesheet" href="../css/sub.css?v1.211111111111111"> <!-- 수정o -->
+</head>	<!-- header	-->
+	<header class="header">
+        <div class="header-left">
+            <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+        </div>
+        <div class="header-mid">
+            <nav class="menu">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="../contents/sub1.html">연맹소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.html">환영사</a></li>
+                                <li><a href="../contents/sub1-2.html">연혁</a></li>
+                                <li><a href="../contents/sub1-3.html">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.html">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.html">조직도</a></li>
+                                <li><a href="../contents/sub1-5.html">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.html">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.html">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub2.html">종목소개</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.html">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.html">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/board-list.html">정보알림</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.html">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="../contents/sub4.html">팀/선수정보</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.html">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.html">상비군</a></li>
+                                <li><a href="../contents/sub4-3.html"">유스</a></li>
+                                <li><a href="../contents/sub4-4.html">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/sub5.html">연맹소식</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="../contents/sub6-5.html">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../contents/gallery-list.html">커뮤니티</a>
+                        <div class="depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.html">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://www.instagram.com/korealuge/" target="_blank"><img src="../images/insta.png" alt="insta"></a>    
+                <a href="https://www.youtube.com/@Korealuge " target="_blank"><img src="../images/youtube.png" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="side-btn"><span class="material-icons">menu</span></div>
+            <div class="side-bar">
+                <a href="https://g1.sports.or.kr/index.do" class="side-bar-btn bg-navy" target="_blank"><span class="material-icons">contact_emergency</span>경기인<br>등록 및<br>증명서<br>발급</a>
+                <div class="side-bar-btn"><span class="material-icons">calendar_month</span>주요일정</div>
+                <div class="side-bar-btn bg-darkgray" id="topBtn"><span class="material-icons">arrow_upward</span>TOP</div>
+            </div>
+        </div>
+	</header> 
+
+    <div class="sitemap">
+        <div class="top-area">
+            <div class="sitemap-tit">
+                <h2>sitemap</h2>
+            </div>
+            <div class="close-btn">
+                <span class="material-icons">close</span>
+            </div>
+        </div>
+            <div class="sitemap-menu">
+                <ul class="sitemap-nav">
+                    <li>
+                        <a href="javascript:void(0);">연맹소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub1.html">환영사</a></li>
+                                <li><a href="../contents/sub1-2.html">연혁</a></li>
+                                <li><a href="../contents/sub1-3.html">임원소개</a></li>
+                                <li><a href="../contents/sub1-8.html">전국시도연맹</a></li>
+                                <li><a href="../contents/sub1-4.html">조직도</a></li>
+                                <li><a href="../contents/sub1-5.html">연맹규정</a></li>
+                                <!-- <li><a href="../contents/sub1-6.html">목표 및 비전</a></li> -->
+                                <li><a href="../contents/sub1-7.html">찾아오시는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">종목소개<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub2.html">루지란?</a></li>
+                                <li><a href="https://www.fil-luge.org/en/tracks/artificial-tracks" target="_blank">경기트랙<span class="material-icons open_in_new">open_in_new</span></a></li>
+                                <li><a href="../contents/sub2-2.html">국제규정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">정보알림<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/board-list.html">공지사항</a></li>
+                                <li><a href="javascript:void(0);">경영공시</a></li>
+                                <li><a href="javascript:void(0);">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+					<li>
+                        <a href="javascript:void(0);">팀/선수정보<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/sub4.html">국가대표</a></li>
+                                <li><a href="../contents/sub4-2.html">상비군</a></li>
+                                <li><a href="../contents/sub4-3.html">유스</a></li>
+                                <li><a href="../contents/sub4-4.html">지도자</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">연맹소식<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="javascript:void(0);">보도자료</a></li>
+                                <li><a href="javascript:void(0);">주요일정</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">커뮤니티<div class="open-btn"><span class="material-icons">expand_more</span></div></a>
+                        <div class="sitemap-depth2">
+                            <ul>
+                                <li><a href="../contents/gallery-list.html">포토갤러리</a></li>
+                                <li><a href="javascript:void(0);">게시판</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	<!-- end:header -->  
+<!-- site-nav -->
+<section class="sub-tit sub-news">
+    <div class="w90">
+        <div class="w1400">
+            <h2 class="title_st3">연맹소식</h2>
+        </div>
+    </div>
+    <nav class="sub-menu">
+        <div class="w1400 w100">
+            <ul class="sub-nav">
+                <li class="home-btn"><a href="../"><img src="../images/home-btn.png" alt="홈버튼"></a></li>
+                <li class="sub-nav-wrap">
+                    <div class="sub-nav-tit">
+                        <a href="javascript:();">연맹소식</a><span class="material-icons">expand_more</span>
+                    </div>
+                    <ul class="sub-nav-list">
+                        <li><a href="../contents/sub1.html">연맹소개</a></li>
+                        <li><a href="../contents/sub2.html">종목소개</a></li>
+                        <li><a href="../contents/board-list.html">정보알림</a></li>
+                        <li><a href="javascript:();">팀/선수정보</a></li>
+                        <li><a href="../contents/gallery-list.html">커뮤니티</a></li>
+                    </ul>
+                </li>
+                <li class="sub-nav-wrap">
+                    <div class="sub-nav-tit">
+                        <a href="javascript:();">보도자료</a><span class="material-icons">keyboard_arrow_down</span>
+                    </div>
+                    <ul class="sub-nav-list">
+                        <li><a href="javascript:();">주요일정</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<!-- view -->
+<section class="w1400 pd60">
+    <div class="view-top">
+        <span class="tag">국내대회</span>
+        <h4>제104회 전국동계체육대회</h4>
+    </div>
+    <div class="view-mid">
+        <div class="schedual">
+            <div class="img-area"><img src="../images/schedual3.png" alt="주요일정"></div>
+            <div class="txt-area">
+                <table class="table_st1">
+                    <tbody>
+                        <tr>
+                            <th>대회기간</th>
+                            <td>2023/02/17~2023/02/18</td>
+                        </tr>
+                        <tr>
+                            <th>대회장소</th>
+                            <td>강원도 평창</td>
+                        </tr>
+                        <tr>
+                            <th>첨부파일</th>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="txt-area mt30">
+            <h4 class="title_st5">제 104회 전국동계체육대회 세부 경기 일정</h4>
+            <div class="table-area mt20">
+                <table class="table_st1">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">일시</th>
+                            <th>세부일정</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="7">2/17(금) 공식 훈련</th>
+                            <td>14:00~14:30</td>
+                            <td>공식훈련-16세이하부 남자 1인승(1차&2차 주행)</td>
+                            <td rowspan="7">공식훈련 결과에 따라<br>대회 주행 순서 결정</td>
+                        </tr>
+                        <tr>
+                            <td>14:30~15:00</td>
+                            <td>공식훈련-16세이하부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>15:00~15:30</td>
+                            <td>공식훈련-19세이하부 남자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>15:30~16:00</td>
+                            <td>공식훈련-19세이하부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>16:00~16:30</td>
+                            <td>공식훈련-대학·일반부 남자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>16:30~17:00</td>
+                            <td>공식훈련-대학·일반부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>17:30</td>
+                            <td>지도자회의(비대면)</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="7">2/18(토) 전국체전</th>
+                            <td>10:00~10:30</td>
+                            <td>16세이하부 남자 1인승(1차&2차 주행)</td>
+                            <td rowspan="7"></td>
+                        </tr>
+                        <tr>
+                            <td>10:30~11:00</td>
+                            <td>16세이하부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>11:00~11:20</td>
+                            <td>19세이하부 남자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>11:30~11:50</td>
+                            <td>19세이하부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>12:00~12:20</td>
+                            <td>대학·일반부 남자 1인승(1차&2차 주행)</td>
+                        </tr>
+                        <tr>
+                            <td>12:30~12:50</td>
+                            <td>대학·일반부 여자 1인승(1차&2차 주행)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p>* 현장 및 경기운영 상황에 따라 세부 일정 일부 변경 가능.</p>
+            </div>
+        </div>
+    </div>
+    <div class="view-nav">
+        <div class="lightgray list-move"><span class="material-icons">arrow_back_ios</span><p>이전 글이 없습니다.</p></div><button type="button" class="list-btn">목록으로</button><div class="list-move"><p class="t_right">2023년 루지 상비군 선수단 선발확정</p><span class="material-icons">arrow_forward_ios</span></div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+    <div class="txt">
+        <a href="javascript:void(0);" class="info">개인정보처리방침</a>
+        <address>
+            <em>서울특별시 송파구 올림픽로 424 벨로드롬경기장 동계종목경단체사무국 102호 TEL : 02.413.9917 FAX : 02.413.9918</em>
+            <cite>COPYRIGHT(C) 2010 대한루지경기연맹 ALL RIGHTS RESERVED</cite>
+        </address>
+    </div>
+    <div class="img">
+        <h1 class="logo"><a href="../">대한루지연맹</a><h1>
+    </div>
+</footer>
+<!-- aos(스크롤애니메이션) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
