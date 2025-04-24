@@ -1,0 +1,7 @@
+    <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="https://opencampus.tsu.ac.kr/">
+    <meta property="og:title" content="대구과학대학교 오픈캠퍼스">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/common/share.png">
+    <meta property="og:description" content="대구과학대학교 오픈캠퍼스 홈페이지입니다.">
