@@ -1,0 +1,2011 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="http://sian.knlsys.com/tsu_open/contents/main.php">
+    <meta property="og:title" content="대구과학대학교 오픈캠퍼스">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/common/share.png">
+    <meta property="og:description" content="대구과학대학교 오픈캠퍼스 홈페이지입니다.">
+    <title>대구과학대학교 오픈캠퍼스</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+
+    <!-- jquery -->
+    <script src="../js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="../js/swiper/swiper.min.js"></script>
+    <script src="../js/web.js"></script>
+
+</head><section class="sub intro">
+    <header class="header">
+    <h1 class="logo">
+        <a href="../">대구과학대학교 오픈캠퍼스</a>
+    </h1>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="../contents/intro.php">학교소개</a>
+            </li>
+            <li>
+                <a href="https://ipsi.tsu.ac.kr" target="_blank">입학소개</a>
+            </li>
+            <li class="sub_menu">
+                <a href="javascript:void(0);" onclick="popupLayer('popHak');">학과안내</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">유튜브</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="popupLayer('request');">학과탐방<br><span class="sub_menu">/</span>상담신청</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="popupLayer('naesin');">내신성적<br>진단</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="popupLayer('ipsi');">입시설명회<br>신청</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="popupLayer('event');">이벤트</a>
+            </li>
+            <div class="message">매월 이벤트 경품 추첨!🎉</div>
+        </ul>
+    </nav>
+    <div class="right_wrap"><div class="count"><span class="material-icons">person</span>68,924</div></div>
+</header>
+
+<div class="floating_b">
+    <a href="https://pf.kakao.com/_JQrxcC" target="_blank" title="새창링크" class="kakao"><img src="https://www.tsu.ac.kr/cmm/img/cmm/fix_banner_tit1.png" alt="실시간 입학상담"></a>
+    <a href="https://ipsi.tsu.ac.kr/torg/contents/sub/211" target="_blank" title="새창링크" class="open"><img src="https://www.tsu.ac.kr/cmm/img/cmm/wonseo_banner_tit1.png" alt="입시일정바로가기"></a>
+</div>
+
+<a href="javascript:void(0);" class="top_btn" id="top_btn">
+    <span class="material-icons">expand_less</span>
+    <span class="txt">TOP</span>
+</a>
+
+<div id="event" class="dim-layer">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <h2 class="tit">🎁 E V E N T 🎈</h2>
+        </div>
+        <div class="pop-conts">
+            <!-- 이벤트 문제 출제, 룰렛 추가 -->
+            <div class="quiz">
+                <p class="info"><span class="material-icons">info</span>아래문제 4문제 이상 맞추면 이벤트 참여가 가능합니다.(월 1회 응모가능)</p>
+                <ul>
+                    <input type="hidden" name="fal_chk" id="fal_chk" value="">
+                    <input type="hidden" name="gift" id="gift" value="">
+                    <li>
+                        <input type="hidden" name="oa_chk" id="oa_chk1" value="1">
+                        <div class="titWrap">
+                            <p class="tit">1. 2024학년도 수능과목 중 우리대학에서 반영하지 않는 과목은? <a href="javascript:void(0);" class="hint" onclick="hintLayer('hint1')">Hint<span class="material-icons">zoom_in</span></a></p>
+                        </div>
+                        <fieldset class="fregister_wrap">
+                            <input type="radio" name="quiz1" id="quiz1_1" class="selec_ra" value="1">
+                            <label for="quiz1_1">① 한국사</label>
+                            <input type="radio" name="quiz1" id="quiz1_2" class="selec_ra" value="2">
+                            <label for="quiz1_2">② 국어</label>
+                            <input type="radio" name="quiz1" id="quiz1_3" class="selec_ra" value="3">
+                            <label for="quiz1_3">③ 영어</label>
+                            <input type="radio" name="quiz1" id="quiz1_4" class="selec_ra" value="4">
+                            <label for="quiz1_4">④ 수학</label>
+                            <input type="radio" name="quiz1" id="quiz1_5" class="selec_ra" value="5">
+                            <label for="quiz1_5">⑤ 탐구</label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <input type="hidden" name="oa_chk" id="oa_chk2" value="4">
+                        <div class="titWrap">
+                            <p class="tit">2. 우리대학교 수시모집 일반고전형에 지원할 경우 대학수학능력시험을 필수로 응시해야 되는 과는? <a href="javascript:void(0);" class="hint" onclick="hintLayer('hint2')">Hint<span class="material-icons">zoom_in</span></a></p>
+                        </div>
+                        <fieldset class="fregister_wrap">
+                            <input type="radio" name="quiz2" id="quiz2_1" class="selec_ra" value="1">
+                            <label for="quiz2_1">① 물리치료학과</label>
+                            <input type="radio" name="quiz2" id="quiz2_2" class="selec_ra" value="2">
+                            <label for="quiz2_2">② 건축인테리어과</label>
+                            <input type="radio" name="quiz2" id="quiz2_3" class="selec_ra" value="3">
+                            <label for="quiz2_3">③ 패션주얼리과</label>
+                            <input type="radio" name="quiz2" id="quiz2_4" class="selec_ra" value="4">
+                            <label for="quiz2_4">④ 간호학과</label>
+                            <input type="radio" name="quiz2" id="quiz2_5" class="selec_ra" value="5">
+                            <label for="quiz2_5">⑤ 치위생과</label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <input type="hidden" name="oa_chk" id="oa_chk3" value="3">
+                        <div class="titWrap">
+                            <p class="tit">3. 2024학년도 수능일은 언제 일까요? <a href="javascript:void(0);" class="hint" onclick="hintLayer('hint3')">Hint<span class="material-icons">zoom_in</span></a></p>
+                        </div>
+                        <fieldset class="fregister_wrap">
+                            <input type="radio" name="quiz3" id="quiz3_1" class="selec_ra" value="1">
+                            <label for="quiz3_1">① 11월 3일</label>
+                            <input type="radio" name="quiz3" id="quiz3_2" class="selec_ra" value="2">
+                            <label for="quiz3_2">② 11월12일</label>
+                            <input type="radio" name="quiz3" id="quiz3_3" class="selec_ra" value="3">
+                            <label for="quiz3_3">③ 11월16일</label>
+                            <input type="radio" name="quiz3" id="quiz3_4" class="selec_ra" value="4">
+                            <label for="quiz3_4">④ 11월26일</label>
+                            <input type="radio" name="quiz3" id="quiz3_5" class="selec_ra" value="5">
+                            <label for="quiz3_5">⑤ 12월10일</label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <input type="hidden" name="oa_chk" id="oa_chk4" value="4">
+                        <div class="titWrap">
+                            <p class="tit">4. 수시모집에서 합격한 대학중 몇 개 대학에 예치금 등록이 가능할 까요? <a href="javascript:void(0);" class="hint" onclick="hintLayer('hint4')">Hint<span class="material-icons">zoom_in</span></a></p>
+                        </div>
+                        <fieldset class="fregister_wrap">
+                            <input type="radio" name="quiz4" id="quiz4_1" class="selec_ra" value="1">
+                            <label for="quiz4_1">① 2개</label>
+                            <input type="radio" name="quiz4" id="quiz4_2" class="selec_ra" value="2">
+                            <label for="quiz4_2">② 5개</label>
+                            <input type="radio" name="quiz4" id="quiz4_3" class="selec_ra" value="3">
+                            <label for="quiz4_3">③ 3개</label>
+                            <input type="radio" name="quiz4" id="quiz4_4" class="selec_ra" value="4">
+                            <label for="quiz4_4">④ 1개</label>
+                            <input type="radio" name="quiz4" id="quiz4_5" class="selec_ra" value="5">
+                            <label for="quiz4_5">⑤ 4개</label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <input type="hidden" name="oa_chk" id="oa_chk5" value="3">
+                        <div class="titWrap">
+                            <p class="tit">5. 다음 중 우리대학교 일반고전형에 지원할 수 있는 학생는? <a href="javascript:void(0);" class="hint" onclick="hintLayer('hint5')">Hint<span class="material-icons">zoom_in</span></a></p>
+                        </div>
+                        <fieldset class="fregister_wrap">
+                            <input type="radio" name="quiz5" id="quiz5_1" class="selec_ra" value="1">
+                            <label for="quiz5_1">① 특성화고학생</label>
+                            <input type="radio" name="quiz5" id="quiz5_2" class="selec_ra" value="2">
+                            <label for="quiz5_2">② 산업수요 맞춤형고등학교학생</label>
+                            <input type="radio" name="quiz5" id="quiz5_3" class="selec_ra" value="3">
+                            <label for="quiz5_3">③ 검정고시학생</label>
+                            <input type="radio" name="quiz5" id="quiz5_4" class="selec_ra" value="4">
+                            <label for="quiz5_4">④ 외국고등학교학생</label>
+                            <input type="radio" name="quiz5" id="quiz5_5" class="selec_ra" value="5">
+                            <label for="quiz5_5">⑤ 예·체능고등학교</label>
+                        </fieldset>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="roulette">
+                <img id="rouletteImg" src="../images/main/roulette.png" alt="룰렛 이미지" class="rouletteImg">
+                <img src="../images/main/pin.png" alt="룰렛 이미지" class="pin">
+                <img src="../images/main/roulette_txt.png" alt="룰렛 이미지" class="rouletteTxt">
+                <img src="../images/main/roulette_bg.png" alt="룰렛 이미지" class="rouletteBg">
+            </div>
+        </div>
+    </div>
+
+    <!-- hint -->
+    <div class="hint_wrap">
+        <div id="hint1" class="hint_layer">
+            <div class="hintBg"></div>
+            <div class="hint_poplayer">
+                <div class="hint-head">
+                    <h3>Hint<span class="material-icons">zoom_in</span></h3>
+                </div>
+                <div class="hint-conts">우리대학 수능 반영 과목은 국어, 영어, 수학 중 최우수 영역 2과목 + 탐구영역 중 최우수 과목 1과목을 반영합니다. 그럼 반영하지 않는 과목은?</div>
+                <p class="btn-hintClose"><span class="material-icons">close</span></p>
+            </div>
+        </div>
+        <div id="hint2" class="hint_layer">
+            <div class="hintBg"></div>
+            <div class="hint_poplayer">
+                <div class="hint-head">
+                    <h3>Hint<span class="material-icons">zoom_in</span></h3>
+                </div>
+                <div class="hint-conts">수시모집에서 간호학과 일반고전형 지원자에게 수능최저학력을 요구합니다. ★국어,영어,수학,탐구(사회,과학)영역 중 최우수 영역 2과목의 합이 10등급까지 인정됩니다.</div>
+                <p class="btn-hintClose"><span class="material-icons">close</span></p>
+            </div>
+        </div>
+        <div id="hint3" class="hint_layer">
+            <div class="hintBg"></div>
+            <div class="hint_poplayer">
+                <div class="hint-head">
+                    <h3>Hint<span class="material-icons">zoom_in</span></h3>
+                </div>
+                <div class="hint-conts">2024학년도 대학수학능력시험일은~ 11월 16일 입니다!! 수능일을 착각하는 수험생은 없으시죠?</div>
+                <p class="btn-hintClose"><span class="material-icons">close</span></p>
+            </div>
+        </div>
+        <div id="hint4" class="hint_layer">
+            <div class="hintBg"></div>
+            <div class="hint_poplayer">
+                <div class="hint-head">
+                    <h3>Hint<span class="material-icons">zoom_in</span></h3>
+                </div>
+                <div class="hint-conts">수시모집 등록예치금을 최종 2개 이상의 대학에 납부한 경우, 이중등록 위반으로 모든 대학의 입학이 취소되고 정시모집 및 자율모집에 지원할 수 없습니다!!! 그럼 어떻해야하죠??^_^</div>
+                <p class="btn-hintClose"><span class="material-icons">close</span></p>
+            </div>
+        </div>
+        <div id="hint5" class="hint_layer">
+            <div class="hintBg"></div>
+            <div class="hint_poplayer">
+                <div class="hint-head">
+                    <h3>Hint<span class="material-icons">zoom_in</span></h3>
+                </div>
+                <div class="hint-conts">전형별 지원자격은~~~ 일반고전형 : 일반계고등학교 또는 종합고등학교 출신자로서 일반과정 등의 교육과정 졸업(예정) 자 및 고등학교 졸업자와 동등한 학력 인정 과정(검정고시, 학력인정고등학교 등) 졸업(예정) 자 특성화고전형 : 특성화 고등학교, 산업수요 맞춤형 고등학교(마이스터고등학교 등) 졸업(예정) 자 및 특성화 고등학교와 같은 교육과정을 운영하는 학과가 있는 일반고등학교(종합고등학교) 졸업(예정)자 ★ 농어촌지역 학생은 정원외로 추가 원서접수 가능하며, 본인의 고교유형에 따라 일반고전형 또는 특성화고전형으로 지원가능합니다.^_^</div>
+                <p class="btn-hintClose"><span class="material-icons">close</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="layer2" class="event_layer" style="display:none;">
+    <div class="eventBg"></div>
+    <div class="event-poplayer">
+        <div class="event-conts">
+            <div class="head"><p class="tit">경품 응모가 완료되었습니다 🎉</p><p class="mt10 font_red">당첨 시 다음 달 초에 개별적으로 연락드리겠습니다.</p></div>
+            <button type="button" onclick="event_popup()" id="btSt1" class="btSt1 btn_l bg_grayDark font_white mt20">이벤트응모</button>
+        </div>
+    </div>
+</div>
+
+<div id="layer1" class="event_layer" style="display:none;">
+    <div class="eventBg"></div>
+    <div class="event-poplayer">
+        <div class="event-conts">
+            <div class="head"><p class="tit">틀린 문제가 있어요 😥</p><p id="info"></p></div>
+            <button type="button" onclick="falchk()" class="btSt1 btn_l bg_grayDark font_white mt20">틀린문제풀기</button>
+        </div>
+    </div>
+</div>
+
+<div id="event_form" class="dim-layer">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <h2 class="tit">개인정보 입력</h2>
+        </div>
+        <div class="pop-conts">
+            <p class="txt_info box_line mb30">1. 매월 1회이상 에어팟추첨기회 제공.
+                <br>2. 수시1차, 수시2차 마감 후 에어팟, 아이패드, 애플워치 각 1대를 추첨을 통해 드립니다.<br>
+                3. 이벤트에 응모할수록 월간, 수시 이벤트(에어팟,아이패드,애플워치)에 당첨될 확률이 높아집니다.<br>4. 아래 이벤트 인적사항 입력 후 신청 버튼을 누루시면 다양한 상품에 응모 하실수 있습니다.<br>5. 해당 이벤트 신청은 매월 1회로 제한됩니다.<br>※ 이벤트 중복 신청으로 간주될 경우 경품이 취소됩니다.
+            </p>
+            <div class="form_area">
+                <div class="hak_visi">		
+                    <form id="insertForm2" name="insertForm2" action="" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+                        <input type="hidden" name="tour_type" value="opencam_event" class="tour_type">
+                        <input type="hidden" name="hak_type" value="B" class="hak_type">
+                        <input type="hidden" name="auth_complet" id="auth_complet" value="">
+                        <div class="input_box">
+                            <label for="name">신청자</label>
+                            <input type="text" name="user_nm" id="user_nm2">
+                        </div>
+                        <div class="input_box">
+                            <label for="tel">휴대폰</label>
+                            <input type="text" name="phone" id="phone2" placeholder="- 없이 숫자만 입력해주세요" class="phone2">
+                            <button type="button" onclick="phone_auth('phone2','insertForm2')" id="btn_phone2" class="btSt2 btn btn_m bg_grayDark font_white ml10">휴대폰인증</button>
+                        </div>
+                        <div class="input_box auth_num" id="auth_num" style="display:none;">
+                            <label for="mail"></label>
+                            <input type="text" name="auth_no" id="auth_no" placeholder="인증번호" maxlength="6" style="width:15%;">
+                            <span class="timer" id="timer" style="padding-left:10px;"></span>
+                            <button type="button" onclick="auth_check('phone2','insertForm2')" id="btn_phone3" class="btSt2 btn btn_m bg_grayDark font_white ml10">인증하기</button>
+                        </div>
+                        <div class="input_box">
+                            <label for="mail">이메일</label>
+                            <input type="text" name="email" id="email2" placeholder="ex)tsu@naver.com">
+                        </div>
+                        <div class="input_box">
+                            <label for="mail">우편번호</label>
+                            <input type="text" name="postcode" id="postcode" readonly="readonly" placeholder="우편번호" class="postcode">
+                            <button type="button" onclick="zipcode()" class="btSt2 btn btn_m bg_grayDark font_white ml10">주소검색</button>
+                        </div>
+                        <div class="input_box">
+                            <label for="tel">주소</label>
+                            <input type="text" name="postaddr1" id="postaddr1" readonly="readonly" placeholder=""><br>
+                            <div class="input2">
+                                <input type="text" name="postaddr2" id="postaddr2" placeholder="상세주소">
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <label for="high">학교명</label>
+                            <input type="hidden" name="high_cd2" id="high_cd2">
+                            <input type="text" name="high2" id="high2" onclick="school_code('tp2')" readonly="readonly" placeholder="OO고등학교" class="high2">
+                            <button type="button" onclick="school_code('tp2')" class="btSt2 btn btn_m bg_grayDark font_white ml10">검색</button>
+                        </div>
+                        <div class="input_box">
+                            <label for="mail">직접입력</label>
+                            <input type="text" name="high_etc" id="high_etc2" placeholder="학교 외 입력">
+                        </div>
+                        <div class="input_box">
+                            <label for="school">관심학과</label>
+                            <select name="hakgwa_cd" id="hakgwa_cd2" class="form1">				
+                                <option value="" class="form1">학과를 선택하세요!!</option>
+                                <option value="1">간호학과</option>
+                                <option value="25">치위생과</option>
+                                <option value="26">물리치료과</option>
+                                <option value="27">안경광학과</option>
+                                <option value="3">의무행정과</option>
+                                <option value="5">식품영양조리학부</option>
+                                <option value="61">방송영상제작과</option>
+                                <option value="62">뮤지컬연기과</option>
+                                <option value="63">뷰티디자인과</option>
+                                <option value="64">헤어디자인과</option>
+                                <option value="2">유아교육과</option>
+                                <option value="8">금융부동산과</option>
+                                <option value="11">청소년교육지도과</option>
+                                <option value="12">경찰경호행정계열</option>
+                                <!-- <option value="12">경찰행정전공</option>
+                                <option value="24">경호전공</option> -->
+                                <option value="21">사회복지상담과</option>
+                                <option value="29">국방기술행정과</option>
+                                <option value="7">컴퓨터정보과</option>
+                                <option value="15">측지정보과</option>
+                                <option value="16">반도체전자과</option>
+                                <option value="18">건축인테리어과</option>
+                                <option value="10">패션주얼리과</option>
+                                <option value="22">레저스포츠과</option>
+                                <option value="30">전문스포츠지도과</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <label for="agreebox">개인정보 수집·이용동의</label>
+                            <div class="textarea" id="agreebox2">
+                                <div class="box_line mt10 mb10">
+                                    귀하는 아래 내용을 확인하고 대구과학대학교가 다음과 같이 개인정보를 수집및 이용에 동의합니다.<br><br>
+                                    1)개인정보 수집·이용 항목 : 이름,휴대폰, 이메일, 재학중인학교, 학년, 관심학과,일시, 인원<br>
+                                    2)개인정보 수집·이용 목적 : 오픈캠퍼스 이벤트 참여 및 입학안내<br>
+                                    3)개인정보의 보유 및 이용기간 : 이용목적 달성 시까지<br>
+                                    4)동의거부권 및 불이익 : 귀하는 동의를 거절하 수 있는 권리를 보유하며, 동의를 거절하는 경우 상기 이용 목적에 명시된 서비스가 제공되지 아니합니다.
+                                </div>
+                                <div class="agree_wrap">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" class="" id="agree2" checked="" value=""><label for="agree2"><span>개인정보 수집 및 이용에 동의합니다.</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t_center mt30">
+                            <a href="javascript:void(0);" id="btnInsert2" class="btSt2 btn btn_l bg_redDark font_white">신청하기</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ipsi" class="dim-layer layer_st2">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <h2 class="tit">입시설명회 신청📝</h2>
+            <p class="mt10 txt">원하시는 날짜에 고등학교 방문 또는 대구과학대학교에서 진학 설계를 하실수 있습니다.</p>
+        </div>
+        <div class="pop-conts">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <div class="hak_visi pb10">		
+                    <form id="insertForm" name="insertForm" action="" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+                        <input type="hidden" name="tour_type" value="opencam_ipsi" class="tour_type">
+                        <input type="hidden" name="hak_type" value="B" class="hak_type">
+                        <input type="hidden" name="auth_complet" id="auth_complet" value="">
+                        <div class="input_box">
+                            <label for="name">신청자</label>
+                            <input type="text" name="user_nm" id="user_nm">
+                        </div>
+                        <div class="input_box">
+                        <label for="tel">휴대폰</label>
+                        <input type="text" name="phone" id="phone" placeholder="- 없이 숫자만 입력해주세요" class="phone2">
+                        <button type="button" onclick="phone_auth('phone','insertForm')" id="btn_phone2" class="btSt2 btn btn_m bg_grayDark font_white ml10">휴대폰인증</button>
+                    </div>
+                    <div class="input_box auth_num" id="auth_num" style="display:none;">
+                        <label for="mail"></label>
+                        <input type="text" name="auth_no" id="auth_no" placeholder="인증번호" maxlength="6">
+                        <span class="timer" id="timer" style="padding-left:10px;"></span>
+                        <button type="button" onclick="auth_check('phone','insertForm')" id="btn_phone3" class="btSt2 btn btn_m bg_grayDark font_white ml10">인증하기</button>
+                    </div>
+                    <div class="input_box">
+                        <label for="mail">이메일</label>
+                        <input type="text" name="email" id="email" placeholder="ex)tsu@naver.com">
+                    </div>
+                    <div class="input_box">
+                        <label for="high">학교명</label>
+                        <input type="hidden" name="high_cd" id="high_cd">
+                        <input type="text" name="high" id="high" onclick="school_code('tp1')" readonly="readonly" placeholder="OO고등학교" class="high2">
+                        <button type="button" onclick="school_code('tp1')" class="btSt2 btn btn_m bg_grayDark font_white ml10">검색</button>
+                    </div>
+                    <div class="input_box">
+                        <label for="mail">직접입력</label>
+                        <input type="text" name="high_etc" id="high_etc" placeholder="학교 외 입력">
+                    </div>
+                    <div class="input_box hakyeon" style="display: none;">
+                        <label for="hakyeon">학년</label>
+                        <select name="hakyeon" id="hakyeon" class="form1">	
+                            <option value="1" class="form1">1학년</option>
+                            <option value="2" class="form1">2학년</option>
+                            <option value="3" class="form1">3학년</option>
+                            <option value="졸업" class="form1">졸업</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <label for="school">관심학과</label>
+
+                        <select name="hakgwa_cd" id="hakgwa_cd" class="form1">				
+                        <option value="" class="form1">학과를 선택하세요!!</option>
+                            <option value="1">간호학과</option>
+                            <option value="25">치위생과</option>
+                            <option value="26">물리치료과</option>
+                            <option value="27">안경광학과</option>
+                            <option value="3">의무행정과</option>
+                            <option value="5">식품영양조리학부</option>
+                            <option value="61">방송영상제작과</option>
+                            <option value="62">뮤지컬연기과</option>
+                            <option value="63">뷰티디자인과</option>
+                            <option value="64">헤어디자인과</option>
+                            <option value="2">유아교육과</option>
+                            <option value="8">금융부동산과</option>
+                            <option value="11">아동청소년지도과</option>
+                            <option value="12">경찰경호행정계열</option>
+                            <option value="24">경호전공</option>
+                            <option value="21">사회복지상담과</option>
+                            <option value="29">국방기술행정과</option>
+                            <option value="7">컴퓨터응용계열</option>
+                            <option value="15">측지정보과</option>
+                            <option value="16">반도체전자과</option>
+                            <option value="18">건축인테리어과</option>
+                            <option value="10">패션주얼리과</option>
+                            <option value="22">레저스포츠과</option>
+                            <option value="30">전문스포츠지도과</option>
+                        </select>
+                    </div>
+                    <div class="input_box hakgwa_list">
+                        <label>선택 학과</label>
+                        <div class="hakgwa_box"></div>
+                    </div>
+                    <div class="input_box date">
+                        <label for="date">일시</label>
+                        <input type="text" id="tour_dt" name="tour_dt" readonly="readonly" class="form-control datepicker hasDatepicker mr10" placeholder="ex)2020-06-01">
+                        
+                        <select id="tour_ti" name="tour_ti" class="mr10">
+                            <option value="">선택</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                        </select>시
+                    </div>
+                    <div class="input_box">
+                        <label for="tour_cnt">인원</label>
+                        <input type="text" id="tour_cnt" name="tour_cnt" maxlength="3" class="mr10 tour_cnt">명
+                    </div>
+                    <div class="input_box w100">
+                    <label for="agreebox" class="agreebox">개인정보 수집·이용동의</label>
+                        <div class="textarea mt10" id="agreebox">
+                            <div class="box_line mb10">
+                            귀하는 아래 내용을 확인하고 대구과학대학교가 다음과 같이 개인정보를 수집및 이용에 동의합니다.<br><br>
+                            1)개인정보 수집·이용 항목 : 이름,휴대폰, 이메일, 재학중인학교, 학년, 관심학과,일시, 인원<br>
+                            2)개인정보 수집·이용 목적 : 오픈캠퍼스 이벤트 참여 및 입학안내<br>
+                            3)개인정보의 보유 및 이용기간 : 이용목적 달성 시까지<br>
+                            4)동의거부권 및 불이익 : 귀하는 동의를 거절하 수 있는 권리를 보유하며, 동의를 거절하는 경우 상기 이용 목적에 명시된 서비스가 제공되지 아니합니다.
+                            </div>
+                            <div class="agree_wrap">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" class="" id="agree" checked="" value=""><label for="agree"><span>개인정보 수집 및 이용에 동의합니다.</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t_center mt30 mb10 w100">
+                        <a href="javascript:void(0);" id="btnInsert" class="btSt2 btn btn_l bg_redDark font_white">신청하기</a>
+                        <a href="javascript:void(0);" class="btSt2 btn btn_l bg_grayLight2 font_black" onclick="popupLayer('request_confirm');">신청 확인하기</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="naesin" class="dim-layer layer_st2">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <h2 class="tit">내신성적 진단하기🔍</h2>
+        </div>
+        <div class="pop-conts">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <div class="hak_visi">		
+                <div class="btn_right mb20">
+                    <a href="http://ipsi.tsu.ac.kr/torg/ipsi/moj/jiwon/450" class="btn btn_m bg_redDark font_white" target="_blank">전년도 지원현황</a>
+                    <a href="http://ipsi.tsu.ac.kr/torg/ipsi/moj/dung/449" class="btn btn_m bg_redDark font_white" target="_blank">전년도 등급현황</a>
+                    <a href="http://ipsi.tsu.ac.kr/torg/contents/sub/481" class="btn btn_m bg_redDark font_white" target="_blank">2023학년도 전형안내</a>
+                </div>
+                <iframe id="ipsifrm2" src="//www.tsu.ac.kr/cmm/ipsi_new/ns_go1.php" frameborder="0" width="100%" style="min-height:1000px;" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+            </div>
+        </div><!-- pop-cont -->
+    </div><!-- \\pop-layer -->
+</div>
+
+<div id="request" class="dim-layer layer_st2">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <h2 class="tit">학과탐방/상담신청💡</h2>
+            <p class="mt10 txt">학과단위 학과 탐방신청을 통하여 학과 실습실 탐방 및 교수와의 면대면 면담을 통해 대학, 진학 설계</p>
+        </div>
+        <div class="pop-conts">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <div class="hak_visi">		
+                <form id="insertForm3" name="insertForm3" action="" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+                    <input type="hidden" name="tour_type" value="opencam_visi" class="tour_type">
+                    <input type="hidden" name="hak_type" value="B" class="hak_type">
+                    <input type="hidden" name="auth_complet" id="auth_complet" value="">
+                    <p class="mb20 pt10 w100">1. 주말 학과탐방을 희망하는 경우 5인이상 신청가능하며 학과일정으로 취소 될 수 있습니다.<br>2. 상담신청 시 관심학과 교수 개별 연락을 통한 상담진행.(개별연락, ZOOM, 카카오채널 등)</p>
+                    <div class="input_box">
+                        <label for="name">구분</label>
+                        <div class="radi_box">
+                            <input type="radio" name="tour_gubun" class="tour_gubun" id="tour_gubun1" value="A"><label for="tour_gubun1">학과탐방</label>
+                            <input type="radio" name="tour_gubun" class="tour_gubun" id="tour_gubun2" checked="" value="B"><label for="tour_gubun2">상담신청</label>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label for="name">이름</label>
+                        <input type="text" name="user_nm" id="user_nm3">
+                    </div>
+                    <div class="input_box">
+                        <label for="tel">휴대폰</label>
+                        <input type="text" name="phone" id="phone3" placeholder="- 없이 숫자만 입력해주세요" class="phone2">
+                        <button type="button" onclick="phone_auth('phone3','insertForm3')" id="btn_phone2" class="btSt2 btn btn_m bg_grayDark font_white ml10">휴대폰인증</button>
+                    </div>
+                    <div class="input_box auth_num" id="auth_num" style="display:none;">
+                        <label for="mail"></label>
+                        <input type="text" name="auth_no" id="auth_no" placeholder="인증번호" maxlength="6" style="width:15%;">
+                        <span class="timer" id="timer" style="padding-left:10px;"></span>
+                        <button type="button" onclick="auth_check('phone3','insertForm3')" id="btn_phone3" class="btSt2 btn btn_m bg_grayDark font_white ml10">인증하기</button>
+                    </div>
+                    <div class="input_box">
+                        <label for="mail">이메일</label>
+                        <input type="text" name="email" id="email3" placeholder="ex)tsu@naver.com">
+                    </div>
+                    <div class="input_box">
+                        <label for="high">학교명</label>
+                        <input type="hidden" name="high_cd3" id="high_cd3">
+                        <input type="text" name="high3" id="high3" onclick="school_code('tp3')" readonly="readonly" placeholder="OO고등학교" class="high2">
+                        <button type="button" onclick="school_code('tp3')" class="btSt2 btn btn_m bg_grayDark font_white ml10">검색</button>
+                    </div>
+                    <div class="input_box hakyeon" style="display: none;">
+                        <label for="hakyeon">학년</label>
+                        <select name="hakyeon" id="hakyeon3" class="form1" style="width:15%">	
+                            <option value="1" class="form1">1학년</option>
+                            <option value="2" class="form1">2학년</option>
+                            <option value="3" class="form1">3학년</option>
+                            <option value="졸업" class="form1">졸업</option>
+                        </select>
+                    </div>
+                    <div class="input_box">
+                        <label for="school">관심학과</label>
+
+                        <select name="hakgwa_cd" id="hakgwa_cd3" class="form1">				
+                        <option value="" class="form1">학과를 선택하세요!!</option>
+
+                            <option value="1">간호학과</option>
+                            <option value="25">치위생과</option>
+                            <option value="26">물리치료과</option>
+                            <option value="27">안경광학과</option>
+                            <option value="3">의무행정과</option>
+                            <option value="5">식품영양조리학부</option>
+                            <option value="61">방송영상제작과</option>
+                            <option value="62">뮤지컬연기과</option>
+                            <option value="63">뷰티디자인과</option>
+                            <option value="64">헤어디자인과</option>
+                            <option value="2">유아교육과</option>
+                            <option value="8">금융부동산과</option>
+                            <option value="11">청소년교육지도과</option>
+                            <option value="12">경찰경호행정과</option>
+                            <!-- <option value="12">경찰행정전공</option>
+                            <option value="24">경호전공</option> -->
+                            <option value="21">사회복지상담과</option>
+                            <option value="29">국방기술행정과</option>
+                            <option value="7">컴퓨터정보과</option>
+                            <option value="15">측지정보과</option>
+                            <option value="16">반도체전자과</option>
+                            <option value="18">건축인테리어과</option>
+                            <option value="10">패션주얼리과</option>
+                            <option value="22">레저스포츠과</option>
+                            <option value="30">전문스포츠지도과</option>
+                        </select>
+                    </div>
+                    <div class="input_box hakgwa_list">
+                        <label>선택 학과</label>
+                        <div class="hakgwa_box"></div>
+                    </div>
+                    <div class="input_box date">
+                        <label for="date">일시</label>
+                        <input type="text" id="tour_dt3" name="tour_dt" readonly="readonly" class="form-control datepicker hasDatepicker mr10" placeholder="ex)2020-06-01">
+                        <select id="tour_ti3" name="tour_ti" class="mr10">
+                            <option value="">선택</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                        </select>시
+                    </div>
+                    <div class="input_box">
+                        <label for="tour_cnt">인원</label>
+                        <input type="text" id="tour_cnt3" name="tour_cnt" maxlength="3" class="mr10 tour_cnt">명
+                    </div>
+                    <div class="input_box w100">
+                        <label for="agreebox" class="agreebox">개인정보 수집·이용동의</label>
+                        <div class="textarea mt10" id="agreebox3">
+                            <div class="box_line mb10">
+                            귀하는 아래 내용을 확인하고 대구과학대학교가 다음과 같이 개인정보를 수집및 이용에 동의합니다.<br><br>
+                            1)개인정보 수집·이용 항목 : 이름,휴대폰, 이메일, 재학중인학교, 학년, 관심학과,일시, 인원<br>
+                            2)개인정보 수집·이용 목적 : 오픈캠퍼스 이벤트 참여 및 입학안내<br>
+                            3)개인정보의 보유 및 이용기간 : 이용목적 달성 시까지<br>
+                            4)동의거부권 및 불이익 : 귀하는 동의를 거절하 수 있는 권리를 보유하며, 동의를 거절하는 경우 상기 이용 목적에 명시된 서비스가 제공되지 아니합니다.
+                            </div>
+                            <div class="agree_wrap">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="" class="" id="agree3" checked="" value=""><label for="agree"><span>개인정보 수집 및 이용에 동의합니다.</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t_center mt30 mb10 w100">
+                        <a href="javascript:void(0);" id="btnInsert3" class="btSt2 btn btn_l bg_redDark font_white">신청하기</a>
+                        <a href="javascript:void(0);" class="btSt2 btn btn_l bg_grayLight2 font_black" onclick="popupLayer('request_confirm');">신청 확인하기</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popHak" class="dim-layer">
+    <div class="dimBg"></div>
+    <div class="pop-layer">
+        <div class="pop-head">
+            <span class="btn-layerClose"><span class="material-icons">close</span></span>
+            <h2 class="tit">학과안내</h2>
+        </div>
+        <div class="pop-conts">
+            <div class="right_area">
+                <div class="link_box">
+                    <h3 class="tit">자연과학</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">간호학과</a>
+                        <a href="sub01.php">치위생과</a>
+                        <a href="javascript:void(0);">물리치료과</a>
+                        <a href="javascript:void(0);">안경광학과</a>
+                        <a href="javascript:void(0);">의무행정과</a>
+                    </div>
+                </div>
+                <div class="link_box">
+                    <h3 class="tit">인문사회</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">유아교육과</a>
+                        <a href="javascript:void(0);">금융부동산과</a>
+                        <a href="javascript:void(0);">청소년교육지도과</a>
+                        <a href="javascript:void(0);">국방기술행정과</a>
+                    </div>
+                </div>
+                <div class="link_box">
+                    <h3 class="tit">공학</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">측지정보과</a>
+                        <a href="javascript:void(0);">반도체전자과</a>
+                        <a href="javascript:void(0);">건축인테리어과</a>
+                    </div>
+                </div>
+                <div class="link_box">
+                    <h3 class="tit">방송예술대학</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">뷰티디자인과</a>
+                        <a href="javascript:void(0);">헤어디자인과</a>
+                    </div>
+                </div>
+                <div class="link_box">
+                    <h3 class="tit">평<br>생<br>교<br>육<br>대<br>학</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">의료보험서비스학과</a>
+                        <a href="javascript:void(0);">외식창업개발학과</a>
+                        <a href="javascript:void(0);">평생학습상담과</a>
+                        <a href="javascript:void(0);">사회복지웰빙과</a>
+                        <a href="javascript:void(0);">SNS응용창업학과</a>
+                        <a href="javascript:void(0);">건축산업학과</a>
+                        <a href="javascript:void(0);">3D실용주얼리창업과</a>
+                        <a href="javascript:void(0);">부동산과</a>
+                    </div>
+                </div>
+                <div class="link_box">
+                    <h3 class="tit">자<br>율<br>전<br>공<br>대<br>학</h3>
+                    <div class="con">
+                        <a href="javascript:void(0);">식품영양조리학부</a>
+                        <a href="javascript:void(0);">경찰경호행정과</a>
+                        <a href="javascript:void(0);">사회복지상담과</a>
+                        <a href="javascript:void(0);">방송영상제작과</a>
+                        <a href="javascript:void(0);">뮤지컬연기과</a>
+                        <a href="javascript:void(0);">레저스포츠과</a>
+                        <a href="javascript:void(0);">전문스포츠지도과</a>
+                        <a href="javascript:void(0);">컴퓨터정보과</a>
+                        <a href="javascript:void(0);">패션주얼리과</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- pop-cont -->
+    </div><!-- \\pop-layer -->
+</div>
+    <div class="sub_tit">
+        <div class="tit_wrap inner">
+            <a href="https://www.tsu.ac.kr/tsumain/main" class="link"><img src="../images/common/home_ic.png" alt="바로가기" target="_blank">바로가기</a>
+            <h2 class="tit">학교소개</h2>
+        </div>
+        <div class="visual">
+            <div class="txt">TAEGU SCIENCE UNIVERSITY</div>
+        </div>
+    </div>
+
+    <div class="inner">
+        <ul class="category">
+            <li><button class="tab on" id="tab_1" data-base="95">총장인사말</button></li>
+            <li><button class="tab" id="tab_2" data-base="95">연혁</button></li>
+            <li><button class="tab" id="tab_3" data-base="95">교육이념</button></li>
+            <li><button class="tab" id="tab_4" data-base="95">대학상징 CI</button></li>
+            <li><button class="tab" id="tab_5" data-base="95">중장기발전계획</button></li>
+            <li><button class="tab" id="tab_6" data-base="95">조직도</button></li>
+            <li><button class="tab" id="tab_7" data-base="95">대학본부</button></li>
+            <li><button class="tab" id="tab_8" data-base="95">대학홍보</button></li>
+            <li><button class="tab" id="tab_9" data-base="95">학교오시는길</button></li>
+        </ul>
+
+        <div class="tab-content" id="section_1" data-id="1" style="display: block;">
+            <div class="sub_intro inner">
+                <h3 class="tit_st1">총장인사말</h3>
+                <div class="info_wrap">
+                    <div class="txt_wrap">
+                        <p class="font16 font_600 font_blueDark mb10">학생들이 행복해하는 대학,<br>대학 구성원들이 자랑스러워하는 대학,<br>지역사회로부터 존경받는 대학으로 새롭게 도약합니다.</p>
+                        <p class="mb10">대구과학대학교를 방문해 주신 여러분을 진심으로 환영합니다.
+                        우리대학은 ‘참교육으로 미래를 밝히리라’는 건학이념 아래 1960년 대구·경북 최초의 전문대학으로 설립되어 62년의 역사 동안 고등직업교육 선도대학이라는 자부심으로 국가와 지역사회 발전에 기여할 수 있는 우수한 전문 기술인재를 양성해 왔습니다.
+                        최근 인구구조의 변화, 4차 산업혁명과 코로나19 팬데믹 등 대학을 둘러싼 급변하고 불확실한 환경에 선제적으로 대응하기 위해서 ‘인간 중심적 사고를 기반으로 한 참교육’에 기반을 두고 과감한 혁신을 통해 대학의 미래 가치를 만들어 가고자 합니다.
+                        미래사회에 고등직업교육이 나아가야 할 방향은 교육체제 혁신과 교육콘텐츠 개발이라 판단하여 우리대학에서는 산업현장 직무 중심의 에듀테크 교육시스템을 도입하여 교육수요자 맞춤형 교육을 추진하고 있습니다.</p>
+                        <p class="mb10">오랜 역사를 가진 우리대학은 발전의 원동력인 가족문화를 바탕으로 새로운 도전과 개척을 통해 학생들이 행복해하는 대학, 대학 구성원들이 자랑스러워하는 대학, 지역사회로부터 존경받는 대학으로 거듭 날 수 있도록 최선의 노력을 다하겠습니다.
+                        대구과학대학교가 만들어 가는 새로운 역사에 여러분들의 행복한 동행이 함께 하길 기원하며, 여러분들의 빛나는 미래를 응원합니다.</p>
+                        <p class="t_right font_500">대구과학대학교 총장 박 지 은</p>
+                    </div>
+                    <div class="img_wrap">
+                        <img src="../images/sub/sub_greeting.png" alt="greeting">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="section_2" data-id="2">
+            <h3 class="tit_st1">연혁</h3>
+            <article class="history" id="cont">
+                <div class="rowst">	
+                    <ul class="basic_tab">		
+                        <li class="tabHead active" id="tab_1"><a href="javascript:void(0);"><span>2020~</span></a></li>	
+                        <li class="tabHead" id="tab_2"><a href="javascript:void(0);"><span>2010</span></a></li>		
+                        <li class="tabHead" id="tab_3"><a href="javascript:void(0);"><span>2000</span></a></li>		
+                        <li class="tabHead" id="tab_4"><a href="javascript:void(0);"><span>1990</span></a></li>		
+                        <li class="tabHead" id="tab_5"><a href="javascript:void(0);"><span>1980</span></a></li>		
+                        <li class="tabHead" id="tab_6"><a href="javascript:void(0);"><span>1970</span></a></li>		
+                        <li class="tabHead" id="tab_7"><a href="javascript:void(0);"><span>1960</span></a></li>	
+                    </ul>	
+
+                    <div class="timeline" id="tabwrap">		
+                        <div class="tabHead_cont" id="tab1" style="display:block;">			
+                            <h2 class="subTabtitle ">2020~</h2>			
+                            <div class="tabCont">  	
+                                <dl>					
+                                    <dt>2020. 02.</dt>
+                                    <dd>제57회 학위수여식(졸업생누계: 49,905명)</dd>
+                                    <dd>제60회 입학식 거행</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2020. 03.</dt>
+                                    <dd>한국산업인력공단 K-Move스쿨 선정(2018~2020)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2020. 06.</dt>
+                                    <dd>2020년 전문대학 혁신지원사업 3유형(후진학 선도형) 선정(2020~2022)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2020. 10.</dt>
+                                    <dd>교육부 대학 비대면 교육 긴급지원사업 선정</dd>
+                                    <dd>한국영양교육평가원 영양사교육과정 평가 인증 획득(2021~2025)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2021. 02.</dt>
+                                    <dd>제58회 학위수여식(졸업생누계: 51,394명)</dd>
+                                    <dd>제61회 입학식 거행</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2021. 03.</dt>
+                                    <dd>대학진로탐색캠프 운영대학 선정</dd>
+                                    <dd>학사학위 전공심화과정설치 인가(치위생학과, 아동청소년지도학과)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2021. 05.</dt>
+                                    <dd>전문대학 비대면 수업콘텐츠 및 자료개발 지원사업 선정</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2021. 09.</dt>
+                                    <dd>교육부 전문대학 기본역량진단 “일반재정지원대학” 선정(2022~2024)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2021. 12.</dt>
+                                    <dd>고용노동부 일반고 특화 직업능력개발훈련과정 위탁교육기관 지정</dd>
+                                    <dd>전문대학 3주기 기관평가인증(고등직업 교육품질 인증) 인증 획득(2022~2026)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 01.</dt>
+                                    <dd>제19대 총장 박지은 박사 취임</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 02.</dt>
+                                    <dd>제59회 학위수여식(졸업생누계: 52,866명)</dd>
+                                    <dd>제62회 입학식 거행</dd>
+                                    <dd>교육부 교원양성기관 역량진단 A등급 획득(간호학과)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 03.</dt>
+                                    <dd>학사학위 전공심화과정설치 인가(유아교육학과)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 04.</dt>
+                                    <dd>지자체-대학 협력기반 지역혁신사업(RIS사업) 참여대학 선정(2022~2026)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 05.</dt>
+                                    <dd>교육부 3단계 산학연협력 선도전문대학 육성사업(LINC 3.0) 선정(2022~2024)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 06.</dt>
+                                    <dd>교육부 전문대학 전문기술석사과정 인가(2022)</dd>
+                                    <dd>교육부 고등직업교육거점지구 사업(HiVE) 참여대학 선정(2022~2024)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2022. 12.</dt>
+                                    <dd>교육부 2022년 우수 교수학습지원센터 선정(2022~2025)</dd>
+                                    <dd>한국간호교육평가원 4주기 「간호교육 인증평가」 ‘3년’ 인증대학 선정(2023~2025)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2023. 02.</dt>
+                                    <dd>제60회 학위수여식(졸업생누계: 54,307명)</dd>
+                                    <dd>제63회 입학식 거행</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2023. 03.</dt>
+                                    <dd>한국보건의료정보관리교육평가원 1주기 보건의료정보관리교육 평가·인증 ‘5년’ 인증대학 선정(2023~2027)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2023. 04.</dt>
+                                    <dd>대한상공회의소 2023년 직업계고 채용연계형 직무교육과정 지원사업 선정(반도체전자과)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2023. 06.</dt>
+                                    <dd>대한민국 해병대 부사관 학군단(RNTC) 선정(2023)</dd>
+                                    <dd>교육부 2주기 대학의 평생교육체제 지원사업(LiFE 2.0) 선정(2023~2025)</dd>
+                                    <dd>교육부 2023년 마이스터대 지원사업 선정(2023~2024)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2023. 07.</dt>
+                                    <dd>교육부 전문대학 혁신지원사업 Ⅱ유형(지방 전문대학 활성화) 선정(2023~2025)</dd>
+                                </dl>
+                                <dl>				
+                                    <dt>현재 </dt>					                    
+                                    <dd>교육부 전문대학 혁신지원사업 Ⅱ유형(지방 전문대학 활성화) 선정(2023~2025)</dd>
+                                    <dd>교육부 2023년 마이스터대 지원사업 선정(2023~2024)</dd>
+                                    <dd>교육부 2주기 대학의 평생교육체제 지원사업(LiFE 2.0) 선정(2023~2025)</dd>
+                                    <dd>대한민국 해병대 부사관 학군단(RNTC) 선정(2023)</dd>		
+                                    <dd>대한상공회의소 2023년 직업계고 채용연계형 직무교육과정 지원사업 선정(반도체전자과)</dd>				                    
+                                    <dd>한국보건의료정보관리교육평가원 1주기 보건의료정보관리교육 평가·인증 ‘5년’ 인증대학 선정(2023~2027)</dd>
+                                    <dd>교육부 2022년 우수 교수학습지원센터 선정(2022~2025)</dd>
+                                    <dd>한국간호교육평가원 4주기 「간호교육 인증평가」 ‘3년’ 인증대학 선정(2023~2025)</dd>
+                                    <dd>교육부 전문대학 전문기술석사과정 운영(2023)</dd>
+                                    <dd>교육부 고등직업교육거점지구 사업(HiVE) 참여대학 선정(2022~2024)</dd>
+                                    <dd>지자체-대학 협력기반 지역혁신사업(RIS사업) 참여대학 선정(2022~2026)</dd>
+                                    <dd>교육부 3단계 산학연협력 선도전문대학 육성사업(LINC 3.0) 선정(2022~2024)</dd>
+                                    <dd>교육부 전문대학 기본역량진단 “일반재정지원대학” 선정(2022~2024)</dd>
+                                    <dd>교육부 전문대학 혁신지원사업 선정(2022~2024)</dd>
+                                    <dd>전문대학 3주기 기관평가인증(고등직업 교육품질 인증) 인증 획득(2022~2026)</dd>
+                                    <dd>한국영양교육평가원 영양사교육과정 평가 인증 획득(2021~2025)</dd>
+                                    <dd>국토교통부 공간정보 특성화 전문대학 사업 선정(2017~2023)</dd>
+                                    <dd>정부대구지방합동청사 어린이집 위탁운영기관 선정(2013~2023)</dd>
+                                    <dd>대구광역시 달성군 어린이 급식관리지원센터 위탁운영기관 선정(2013~2023)</dd>
+                                    <dd>대구광역시 북구 강북 어린이급식관리지원센터 위탁운영기관 선정(2016~2023)</dd>
+                                    <dd>교육부 지정 “교육기부우수기관” 선정(2020~2023)</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tabHead_cont" id="tab2">			
+                            <h2 class="subTabtitle ">2010</h2>			
+                            <div class="tabCont">  	
+                                <dl>					
+                                    <dt>2010.02</dt>					
+                                    <dd>제13대 총장 김석종 박사 연임</dd>					
+                                    <dd>제47회 학위수여식 거행(졸업생누계 : 34,746)</dd>					
+                                    <dd>제50회 입학식 거행</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2010.03</dt>					
+                                    <dd>학사학위 전공심화과정설치 인가(측지정보학과)</dd>		
+                                    <dd>교육과학기술부 전문대학 교육역량강화사업 우수대학 선정</dd>	
+                                    <dd>고용노동부 청년직장체험프로그램 선정(2010~2013)</dd>			
+                                </dl>				
+                                <dl>					
+                                    <dt>2010.05</dt>					
+                                    <dd>개교 50주년 기념식 및 UI 선포</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2010.07</dt>					
+                                    <dd>중국 연변대학, 연변과학기술대학과 자매결연</dd>	
+                                    <dd>교육과학기술부 2010년 대학 대표브랜드사업지원(인센티브) 선정(2010~2013)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2010.10</dt>					
+                                    <dd>중국 절강공업대학과 자매결연</dd>					
+                                    <dd>대구과학대학교 영송체육관 개관</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.01</dt>					
+                                    <dd>필리핀 EMILIO AGUINALDO COLLEGE와 자매결연</dd>
+                                </dl>				   				
+                                <dl>					
+                                    <dt>2011.02</dt>					                    
+                                    <dd>제48회 학위수여식 거행(졸업생누계 : 36,228명)</dd>
+                                    <dd>고용노동부 청년취업진로지원(취업지원관)사업 선정(2011~2015)</dd>
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.03</dt>					
+                                    <dd>제51회 입학식 거행</dd>					
+                                    <dd>대구시 어린이 식품안전 및 영양교육사업 위탁기관 선정</dd>		
+                                    <dd>중소기업청 및 시장경영진흥원 상인대학 운영기관 선정(2011~2013)</dd>		
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.05</dt>					
+                                    <dd>대운동장 인조잔디조성사업 완료</dd>	
+                                    <dd>교육과학기술부 글로벌 거점대학 육성사업(GHC) 선정(2011~2012)</dd>	
+                                    <dd>대구 주얼리산업 브랜드마케팅 활성화사업 선정(2011~2013)</dd>	
+                                    <dd>교육과학기술부 “교육기부인증기관” 선정(2011~2016)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2011.06</dt>					
+                                    <dd>교육과학기술부 학사제도 개선 시범 운영대학선정(2011~2014)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2011.07</dt>					
+                                    <dd>스마트 콘텐츠 전문인력개발 및 일자리 창출사업 선정(2011~2015)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.08</dt>					
+                                    <dd>대구과학대학교 제주연수원 개원</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.09</dt>					
+                                    <dd>국가재난 응급의료 전문가 과정 교육센터(BDLS Basic Trainer Center) 지정(미국의학협회/BDLSF)</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>2011.11</dt>					
+                                    <dd><b>대구과학대학교</b> 교명 변경</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2011.12</dt>					
+                                    <dd>필리핀 EMILIO AGUINALDO COLLEGE와 자매결연</dd>					
+                                    <dd>교육과학기술부 수업연한 4년제 간호학과 선정</dd>					
+                                    <dd>영송중앙도서관 전자도서관시스템(ODIS-U) 구축</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2012.02</dt>					
+                                    <dd>제14대 총장 김석종 박사 연임</dd>					
+                                    <dd>제49회 학위수여식 거행(졸업생누계 : 37,662명)</dd>					
+                                    <dd>한국연구재단 KRI시스템 우수운영기관 표창</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2012.03</dt>					
+                                    <dd>제52회 입학식 거행</dd>					
+                                    <dd>한국산업인력공단 국가기술자격 업무협약(MOU) 체결</dd>					
+                                    <dd>중국 대련대학과 자매결연</dd>		
+                                    <dd>교육과학기술부 산학협력 선도전문대학(LINC) 선정(2012~2017)</dd>		
+                                </dl>				
+                                <dl>					
+                                    <dt>2012.04</dt>					
+                                    <dd>대만 용화과학기술대학과 자매결연</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>2013.01</dt>					
+                                    <dd>교육과학기술부 전문대학 기관평가 인증대학 선정</dd>
+                                    <dd>대구광역시 교육청 일반고 직업과정(조리ㆍ제과제빵 전공) 위탁교육기관 선정(2013~2014)</dd>
+                                </dl>				
+                                <dl>					
+                                    <dt>2013.02</dt>					
+                                    <dd>제50회 학위수여식 거행(졸업생누계 : 39,164명)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2013.03</dt>					
+                                    <dd>제17대 이사장 김향자 박사 연임</dd>					
+                                    <dd>제53회 입학식 거행</dd>					
+                                    <dd>여성가족부 여대생커리어개발 프로그램지원사업 선정</dd>					
+                                    <dd>대구광역시 어린이 식품안전·영양교육사업 위탁운영기관 선정</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2013.04</dt>					
+                                    <dd>중국 대련대학 내(內) 대구과학대학교 대련교육관 개관</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2013.05</dt>					
+                                    <dd>삼성전자서비스(주) 고객응대서비스 인턴십프로그램사업 선정</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2013.06</dt>					
+                                    <dd>한국간호교육평가원 2주기 대구·경북 최초「간호교육 인증평가」 ‘5년’ 인증대학 선정(2013~2018)</dd>				
+                                </dl>				
+                                    <dl>					
+                                    <dt>2013.07</dt>					
+                                    <dd>문화체육관광부 다롄 세종학당 위탁운영기관 신규지정</dd>					
+                                    <dd>교육부 전문대학교육역량강화사업 선정</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2013.08</dt>					
+                                    <dd>대구광역시 달성군 어린이 급식관리지원센터 위탁운영기관 선정(2013~2016)</dd>									
+                                </dl>				
+                                <dl>					
+                                    <dt>2013.12</dt>					
+                                    <dd>정부대구지방합동청사 어린이집 위탁운영기관 선정(2013~2017)</dd>									
+                                </dl>			
+                                <dl>					
+                                <dt>2014.02</dt>					
+                                    <dd>제51회 학위수여식 거행(졸업생누계 : 40,698명)</dd>		
+                                    <dd>고용노동부 청년 강소기업체험프로그램 선정(2014~2015)</dd>								
+                                </dl>				
+                                <dl>					
+                                    <dt>2014.03</dt>					
+                                    <dd>제54회 입학식 거행</dd>					
+                                    <dd>제15대 총장 김향자 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2014.04</dt>					
+                                    <dd>제18대 이사장 이술화 취임</dd>				
+                                </dl>	
+                                <dl>					
+                                    <dt>2014.06</dt>					
+                                    <dd>교육부 특성화 전문대학 육성사업(SCK) 선정(2014~2018)</dd>				
+                                </dl>			
+                                <dl>					
+                                    <dt>2014.08</dt>					
+                                    <dd>교원양성기관평가 A등급 획득(유아교육과, 간호학과)</dd>					
+                                    <dd>교원양성기관평가 실기교사양성학과 유지 획득 (건축, 레저, 방송, 식품, 정보통신, 컴퓨터)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2014.10</dt>					
+                                    <dd>말레이시아 SEGI University 교환학생 약정 체결</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2015.01</dt>					
+                                    <dd>고용노동부 일반고 특화 직업능력개발훈련과정 위탁교육기관 지정(한식·양식·제과제빵·네일아트 전공)(2015~2016)</dd>			
+                                    <dd>대구광역시 교육청, 경상북도 교육청 일반고 특화 직업능력개발훈련과정 위탁교육기관 선정(2015~2018)</dd>	
+                                </dl>
+                                <dl>					
+                                    <dt>2015.02</dt>					
+                                    <dd>제52회 학위수여식 거행(졸업생누계 : 42,193명)</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>2015.03</dt>					
+                                    <dd>제55회 입학식 거행</dd>					
+                                    <dd>학사학위 전공심화과정설치 인가(방송뷰티헤어학과)</dd>					
+                                    <dd>대구광역시체육회 운동부 육성지원사업 선정</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2015.08</dt>					
+                                    <dd>대학구조개혁평가 대구지역 전문대 중 1위</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2016.01</dt>					
+                                    <dd>제16대 총장 박준 박사 취임</dd>					
+                                    <dd>제19대 이사장 김향자 박사 취임</dd>		
+                                    <dd>교육과학기술부 전문대학 글로벌 현장학습 사업 선정(2016~2018)</dd>			
+                                </dl>
+                                <dl>					
+                                    <dt>2016.06</dt>					
+                                    <dd>교육부 특성화 전문대학 육성사업 중간(성과)평가 “매우우수” 등급 획득</dd>					
+                                    <dd>교육부 대구·경북·강원권 NCS거점대학 선정</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2016.08</dt>									
+                                    <dd>대구광역시 북구 강북 어린이급식관리지원센터 위탁운영기관 선정(2016~2018)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2017. 02.</dt>					
+                                    <dd>제54회 학위수여식 거행(졸업생누계 : 44,659명)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2017. 05.</dt>					
+                                    <dd>교육부 사회맞춤형 산학협력 선도전문대학(LINC+) 육성사업 선정</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2017. 06.</dt>					
+                                    <dd>국토교통부 공간정보 특성화 전문대학 선정</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2017. 12.</dt>					
+                                    <dd>교육부 “교육기부인증기관” 선정(2017~2020)</dd>		
+                                    <dd>한국간호교육평가원 3주기 「간호교육 인증평가」 ‘5년’ 인증대학 선정(2018~2022)</dd>			
+                                </dl>
+                                <dl>					
+                                    <dt>2018. 01.</dt>					
+                                    <dd>교육부 교원양성기관평가 A등급 획득(유아교육과)</dd>
+                                    <dd>교육부 전문대학 기관평가 인증 획득</dd>			
+                                </dl>
+                                <dl>					
+                                    <dt>2018. 02.</dt>
+                                    <dd>제55회 학위수여식 거행(졸업생누계 : 45,880명)<br>제58회 입학식 거행</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2018. 09.</dt>
+                                    <dd>대학기본역량진단 “자율개선대학” 선정(2019-2021)</dd>
+                                    <dd>전문대학혁신지원사업 지원대학 선정(2019-2021)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2018. 12.</dt>
+                                    <dd>교육부 우수 교수학습센터 지정(2019~2021)</dd>
+                                </dl>
+                                <dl>					
+                                    <dt>2019. 02.</dt>
+                                    <dd>제56회 학위수여식 거행(졸업생누계 : 48,541명)</dd>
+                                    <dd>제59회 입학식 거행</dd>
+                                </dl>
+                            </div>		
+                        </div>
+                        <div class="tabHead_cont" id="tab3">			
+                            <h2 class="subTabtitle ">2000</h2>			
+                            <div class="tabCont">				
+                                <dl>					
+                                    <dt>2000. 01.</dt>					
+                                    <dd>교육과학기술부 선정 특성화 사업 운영대학(2000~2006)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2000. 05.</dt>					
+                                    <dd>중소기업청 선정 우수창업 동아리(달무리) 운영대학(2000~2002)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2000. 11.</dt>					
+                                    <dd>측량 최우수기관 대통령상 수상</dd>				
+                                </dl>						
+                                <dl>					
+                                    <dt>2001. 03</dt>					
+                                    <dd>정보통신부 선정 IT 전문 교육과정 운영대학(2001~2002)</dd>		
+                                    <dd>중소기업청 기술지도(TRITAS) 대학 선정(2001~2005)</dd>			
+                                </dl>
+                                <dl>					
+                                    <dt>2002. 02</dt>					
+                                    <dd>정보통신부 선정 IT학과 장비 지원 대학</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2002. 05</dt>					
+                                    <dd>교육인적자원부 GIS/LIS 특성화 최우수 대학선정(2002~2008)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2002. 11</dt>					
+                                    <dd>필리핀 세부 University of San Carlos와 자매결연</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>2003.03</dt>					
+                                    <dd>제15대 이사장 김향자 박사 연임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2004.05</dt>					
+                                    <dd>국토교통부 공간정보교육 거점대학 선정(2004~2013)</dd>				
+                                </dl>		
+                                <dl>					
+                                    <dt>2004.06</dt>					
+                                    <dd>지식경제부 지역혁신 특성화지원사업 선정(2004~2005)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2004.07</dt>					
+                                    <dd>여성부 지역사업 맞춤형 취업지원사업 선정(2004~2007)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2004.09</dt>					
+                                    <dd>제9대 학장 김향란 박사 취임</dd>				
+                                </dl>		
+                                <dl>					
+                                    <dt>2005.03</dt>					
+                                    <dd>취업 사이버 인터넷 운영대학</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2005.05</dt>					
+                                    <dd>도서검색 전산화 및 초고속 인터넷 정보제공(전자정보실 운영)</dd>					
+                                    <dd>4년제 대학교와 연계교육 운영대학(경북대학교 외 7개 대학교)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2006.03</dt>					
+                                    <dd>제10대 학장 이광수 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2006.10</dt>					
+                                    <dd>제11대 학장 김석종 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2006.12</dt>					
+                                    <dd>국가균형발전위원회(전문대학특성화분야) 교육과학기술부총리상 수상</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2007. 03.</dt>					
+                                    <dd>교육과학기술부 전문대학 글로벌 현장학습 사업 선정(2007~2014)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2008.02</dt>					
+                                    <dd>제12대 학장 김석종 박사 연임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2008.03</dt>					
+                                    <dd>제16대 이사장 김향자 박사 연임</dd>	
+                                    <dd>학교기업(레꼴 : 제과제빵)국가재정지원사업 선정(2008~2011)</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>2009.03</dt>					
+                                    <dd>학장 김석종 박사 총장으로 명칭 변경</dd>					
+                                    <dd>학점은행제 운영-학사과정(간호과, 유아교육과, 치위생과)</dd>					
+                                    <dd>전문계고교 간 협약학과 운영</dd>
+                                    <dd>대구광역시 노동청 취업지원기능 확충사업 선정(2009~2010)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2009.04</dt>					
+                                    <dd>교육과학기술부 전문대학 교육역량 강화사업 우수대학 선정(2009~2013)</dd>				
+                                </dl>
+                                <dl>					
+                                    <dt>2009.06</dt>					
+                                    <dd>교육과학기술부 산학협력중심 전문대학 선정(2009~2011)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2009.09</dt>					
+                                    <dd>취업정보센터 job-cafe 개설</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>2009.12</dt>					
+                                    <dd>일본 벳푸대학과 자매결연</dd>				
+                                </dl>							
+                            </div>		
+                        </div>		
+                        <div class="tabHead_cont" id="tab4"">			
+                            <h2 class="subTabtitle ">1990</h2>			
+                            <div class="tabCont">				
+                                <dl>					
+                                    <dt>1990.12</dt>					
+                                    <dd>제11대 이사장 김종옥 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1991.03</dt>					
+                                    <dd>미국 Ashland University와 자매결연</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1993.03</dt>					
+                                    <dd>제12대 이사장 김종옥 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1996.04</dt>					
+                                    <dd>호주 Flinders University 와 자매결연</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1996.01.</dt>					
+                                    <dd>교육인적자원부 평가 대구ㆍ경북 1위대학</dd>					
+                                    <dd>교육인적자원부 실험ㆍ실습 개선 우수대학 선정</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1998. 01.</dt>					
+                                    <dd>교육인적자원부 신직업육성사업 8년 연속 선정(1998~2005)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1998.03</dt>					
+                                    <dd>제13대 이사장 김종옥 박사 취임</dd>					
+                                    <dd>일본 明海大學과 자매결연</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1998.05</dt>					
+                                    <dd><b>대구과학대학</b>으로 교명변경</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1999.06</dt>					
+                                    <dd>제14대 이사장 김향자 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1999. 07.</dt>					
+                                    <dd>실업계 고등학교와의 연계교육 운영 우수대학(1999~2002)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1999. 09.</dt>					                    
+                                    <dd>교육인적자원부 주문식 교육 운영대학 선정(1999~2008)</dd>
+                                </dl>			
+                            </div>		
+                        </div>		
+                        <div class="tabHead_cont" id="tab5">			
+                            <h2 class="subTabtitle ">1980</h2>			
+                            <div class="tabCont">				
+                                <dl>					
+                                    <dt>1980.08</dt>					
+                                    <dd>제7대 이사장 송명도 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1980.09</dt>					
+                                    <dd>학급증설(120명) 인가됨에 따라 신입생 입학증원 184명으로 승인</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1981.06</dt>					
+                                    <dd>제8대 이사장 송명도 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1981.10</dt>					
+                                    <dd><b>대구여자전문대학</b>으로 교명변경 및 6개학과 신설승인(문교부장관) 간호과, 유아교육과, 의무행정과, 공예과, 응용미술과, 영어과, 일어과, 7개학과 입학정원 736명</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1981.12</dt>					
+                                    <dd>제9대 이사장 이규식 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1982.02</dt>					
+                                    <dd>대구여자전문대학 부설유치원인가(제207호)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1982.11</dt>					
+                                    <dd>시청각교육실 완공(방송실, 시사실, 스튜디오, 사진부, 어학실습실, 분장실, 휴게실)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1983.11</dt>					
+                                    <dd>제7대 학장 김병락 취임(전학 1040-756)</dd>	
+                                    <dd><b>대구전문대학</b>으로 교명 변경</dd>				
+                                </dl>								
+                                <dl>					
+                                    <dt>1984.03</dt>					
+                                    <dd>본 대학 부설유치원 개원</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1984.05</dt>					
+                                    <dd>제8대 학장 김향란 박사 취임(전학 1040-540)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1986.09</dt>					
+                                    <dd>제10대 이사장 이규식 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1988.12</dt>					
+                                    <dd>일본 瀬戸内短期大学와 자매결연</dd>				
+                                </dl>			
+                            </div>		
+                        </div>		
+                        <div class="tabHead_cont" id="tab6">			
+                            <h2 class="subTabtitle ">1970</h2>			
+                            <div class="tabCont">				
+                                <dl>					
+                                    <dt>1970.03</dt>					
+                                    <dd>제3대 교장 김종옥 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1972.03</dt>					                    
+                                    <dd>제4대 이사장 안호상 박사 취임</dd>
+                                    <dd>제4대 학장 김종옥 박사 취임</dd>
+                                </dl>								
+                                <dl>					
+                                    <dt>1972.12</dt>					
+                                    <dd><b>대구간호전문학교</b>로 승격 (문교부장관)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1975.10</dt>					
+                                    <dd>학도 호국단 설치에 따른 학칙변경인가(실업 1040-779)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1976.03</dt>					
+                                    <dd>제5대 학장 김향란 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1976.04</dt>					
+                                    <dd>제5대 이사장 안호상 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1976.08</dt>					
+                                    <dd>설립자 김종옥 박사 미국 California Christian University에서 명예 교육학박사 학위 취득</dd>	
+                                    <dd>김향란 학장 미국 California Christian University에서 명예 문학박사학위 취득</dd>			
+                                </dl>								
+                                <dl>					
+                                    <dt>1977.10</dt>					
+                                    <dd>설립자 김종옥 박사 미국 California Linda Vista Baptist Bible Collage and Seminary에서 명예 법학 박사학위 취득</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1978.12</dt>					
+                                    <dd>학교법인 한별학숙 : 대구간호전문대학 승격인가 신청(문교부장관)</dd>	
+                                    <dd>제6대 이사장 김종옥 박사 취임</dd>	
+                                    <dd><b>대구간호전문대학</b>으로 승격인가</dd>			
+                                </dl>								
+                                <dl>					
+                                    <dt>1979.03</dt>					
+                                    <dd>제6대 학장 김향란 박사 취임 (과학 1040-262 학장)</dd>				
+                                </dl>			
+                            </div>		
+                        </div>		
+                        <div class="tabHead_cont" id="tab7">			
+                            <h2 class="subTabtitle ">1960</h2>			
+                            <div class="tabCont">				
+                                <dl>					
+                                    <dt>1960.01</dt>					
+                                    <dd>영송 김종옥 박사&nbsp;대구간호학교 설립</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1960.02</dt>					
+                                    <dd>초대&nbsp;교장 김종옥 박사&nbsp;취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1960.05</dt>					
+                                    <dd><b>대구간호학교</b>인가 (3년제 초급대학 : 입학정원 120명)</dd>		
+                                    <dd>초대&nbsp;이사장 김향란 박사&nbsp;취임</dd>			
+                                </dl>							
+                                <dl>					
+                                    <dt>1961.07</dt>					
+                                    <dd>대구산원인가 (보건사회부장관)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1962.04</dt>					
+                                    <dd>간호양성기관지정(보건사회부장관)</dd>
+                                    <dd>교직과정 설치승인(초, 중, 고등학교 양성교사자격증수여 : 문교부장관)</dd>					
+                                </dl>								
+                                <dl>					
+                                    <dt>1964.03</dt>					
+                                    <dd>제2대 이사장 김향란 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1965.03</dt>					
+                                    <dd>제2대 교장 김종옥 박사 취임</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1966.09</dt>					
+                                    <dd>간호원양성기관(대구병원) 연구지정(보건사회부장관)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1967.03</dt>					
+                                    <dd>학급증설인가(정원 240명 : 문교부장관)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1967.12</dt>					
+                                    <dd>학급증설인가(정원 360명 : 문교부장관)</dd>				
+                                </dl>				
+                                <dl>					
+                                    <dt>1968.03</dt>					
+                                    <dd>제3대 이사장 김향란 박사 취임</dd>				
+                                </dl>			
+                            </div>		
+                        </div>	
+                    </div>
+                </div>
+            </article>	
+        </div>
+
+        <div class="tab-content" id="section_3" data-id="3">
+            <article class="contSt2 intro symbol litypenone " id="cont">
+                <div class="sub_intro inner">
+                    <h3 class="tit_st1">교육이념</h3>
+                    <div class="info_wrap">
+                        <div class="box">
+                            <div class="tit">
+                                <h4>설립이념</h4>
+                                <p>참교육으로 미래를 밝히리라!</p>
+                            </div>
+                            <div class="txt">참교육으로 실용학문을 연마하여 국가발전과 인류평화에 공헌하는 참인재 양성</div>
+                        </div>
+                        <div class="box">
+                            <div class="tit">
+                                <h4>대학의 사명</h4>
+                            </div>
+                            <div class="txt">영송정신(嶺松精神)을 바탕으로 사랑과 봉사를 실천하고 진리탐구와 신기술을 창조하는 창의적 전문 인재를 양성하여 국가 발전과 인류평화에 공헌한다.</div>
+                        </div>
+                        <div class="box">
+                            <div class="tit">
+                                <h4>교육목표</h4>
+                            </div>
+                            <div class="txt">진리를 탐구하는 과학인, 신기술을 창조하는 과학인, 봉사를 실천하는 과학인 양성을 교육목표로 한다.</div>
+                        </div>
+                        <div class="box">
+                            <div class="tit">
+                                <h4>교훈</h4>
+                            </div>
+                            <div class="txt">진리(眞理)  창의(創意)  박애(博愛)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="sub_info">
+                        <div class="box">
+                            <h4>대학의 인재상</h4>
+                            <p class="font20">봉사인, 소양인, 지성인, 전문인, 창조인</p>
+                        </div>
+                        <div class="box">
+                            <p class="font16"><b>봉사인(奉仕人)</b> 사랑과 봉사를 실천하는 봉사인<br><b>소양인(素養人)</b> 참된 인성과 직업관을 가진 소양인<br><b>지성인(知性人)</b> 진리 탐구를 중시하는 지성인<br><b>전문인(專門人)</b> 실용학문을 추구하는 전문인<br><b>창조인(創造人)</b> 창의적이고 도전적인 창조인</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_program inner pt50">
+                    <div class="tit_wrap">
+                        <h4 class="tit">대학의 상징물</h4>
+                        <div class="program_wrap pt30">
+                            <div class="items">
+                                <h5 class="mb5 font_500 font16">교기</h5>
+                                <div class="box_line t_center">
+                                    <img alt="대구과학대학교 교기" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/university_symbol_img1.jpg">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <h5 class="mb5 font_500 font16">교표</h5>
+                                <div class="box_line t_center">
+                                    <img alt="대구과학대학교 교표" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/university_symbol_img2.gif">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt5">
+                            <p class="mb5 font_500 font16">심볼</p>
+                            <div class="box_line p20"> 
+                                <b class="font14">진리, 창의, 박애의 교훈 아래 창의적 전문 직업교육을 실현하고자 하는 오랜 역사와 전통, 미래의 비전을 시각화</b>
+                                <ul class="list_st2 mt10">
+                                    <li>상단의 둥근 곡선은 떠오르는 힘찬 태양을 표현하였으며, 과학적 진리 탐구를 통한 글로벌 시대의 찬란한 미래 비전을 제시한 것이다. </li>
+                                    <li>중간의 영문 이니셜인 TSU는 우리대학교의 오랜역사와 전통을 고유의 한국 전통문양으로 표현하였으며, 저력 있는 학문의 전당을 상징한 것이다. </li>
+                                    <li>하단의 두 줄은 심오한 학문 연구의 바탕 위에 교수와 학생이 함께하는 창의적 도전정신을 시각화한 것이다. </li>
+                                    <li>메인 칼라는 영원한 진리와 젊음의 열정을 표현 한 것이다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_program inner pt50">
+                    <div class="tit_wrap">
+                        <h4 class="tit">윤리강령</h4>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">대구과학대학교 윤리강령</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>하나. 교육품질의 향상을 통해 지식과 인성을 겸비한 전문직업인을 양성하는데 합심하여 노력한다.</li>
+                                    <li>하나. 도덕성과 인격, 민주적 태도를 함양하고 진리와 창의와 박애를 실천한다.</li>
+                                    <li>하나. 헌신과 봉사하는 자세로 지역사회와 국가의 발전에 기여한다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt20">
+                            <p class="mb5 font_500 font16">교수의 실천강령</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>전문지식과 인성, 교양을 겸비한 우수한 인재 양성을 위하여 교육, 지도한다.</li>
+                                    <li>학생들을 공정하게 평가하고 그들의 의사와 인격을 존중하고 권리를 보장한다.</li>
+                                    <li>학문의 수월성 제고와 창의적 연구 활동에 최선을 다한다.</li>
+                                    <li>연구를 수행함에 있어 제반 윤리적 책임과 의무를 준수한다.</li>
+                                    <li>교수는 품위를 지키고 법률적, 도덕적 기준을 준수한다.</li>
+                                    <li>교수는 사적 이해관계에 영향을 받지 아니하고 직무를 공정하고 청렴하게 수행한다.</li>
+                                    <li>교수는 직무수행과 관련하여 공평무사하게 처신하고 직무관련자를 우대하거나 차별해서는 아니 된다.</li>
+                                    <li>교수는 직무관련자 또는 직무관련 교직원으로부터 사적인 노무를 제공받거나 요구 또는 약속해서는 아니 된다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt20">
+                            <p class="mb5 font_500 font16">직원의 실천강령</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>업무의 전문성과 능력향상을 위하여 지속적인 자기 계발에 힘쓴다.</li>
+                                    <li>책임의식을 가지고 근무하며, 친절한 태도와 봉사정신으로 업무에 임한다.</li>
+                                    <li>공정하고 투명하게 업무를 수행하고, 신뢰 받는 행정으로 대학 발전에 기여한다.</li>
+                                    <li>지성과 덕성을 함양하고 올바른 윤리의식을 갖춘다.</li>
+                                    <li>직원은 규범과 규정을 준수하며, 구성원간의 협력과 회합을 도모한다.</li>
+                                    <li>직원은 사적 이해관계에 영향을 받지 아니하고 직무를 공정하고 청렴하게 수행한다.</li>
+                                    <li>직원은 직무수행과 관련하여 공평무사하게 처신하고 직무관련자를 우대하거나 차별해서는 아니 된다.</li>
+                                    <li>교수는 직무관련자 또는 직무관련 교직원으로부터 사적인 노무를 제공받거나 요구 또는 약속해서는 아니 된다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt20">
+                            <p class="mb5 font_500 font16">학생의 실천강령</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>전문직업인으로서의 자질을 연마하기 위하여 진취적인 자세로 학습에 매진한다.</li>
+                                    <li>시험과 평가에는 양심에 따라 정직하게 임한다.</li>
+                                    <li>스승에 대해서는 존경심과 기본예절을 갖춘다.</li>
+                                    <li>교우에 대해서는 신뢰를 바탕으로 서로의 인격을 존중한다.</li>
+                                    <li>학생은 건전한 가치관을 가지고 생활하며, 학칙과 규정을 준수한다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>	
+        </div>
+
+        <div class="tab-content" id="section_4" data-id="4">
+            <article class="contSt2 ui isimg" id="cont">
+                <h3 class="tit_st1">대학상징 CI</h3>
+                <div class="mb20 btn_right">
+                    <a class="btn_st1 font_black line_black m0" href="https://www.tsu.ac.kr/tsumain/contents/sub/378" target="_blank">다운로드 바로가기<span class="material-icons font_black">call_made</span></a>
+                </div>
+
+                <div class="sub_program inner">
+                    <div class="tit_wrap m0">
+                        <div class="program_wrap pt30 pb10">
+                            <div class="items">
+                                <h4 class="tit">심볼마크</h4>
+                                <div class="box_line t_center">
+                                    <img alt="심볼마크" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/symbol.png">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <h4 class="tit">엠블럼</h4>
+                                <div class="box_line t_center">
+                                    <img alt="엠블럼" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/emblem.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_line p20"> 
+                        <ul class="list_st2 mt10">
+                            <li>DIC 2486s</li>
+                            <li>C43 + M100 + Y90 + K10</li>
+                            <li>공공디자인 색체표준 7.5R 3/12 진한빨강</li>
+                        </ul>
+                    </div>
+                    <div class="tit_wrap pt50">
+                        <h4 class="tit">시그너처 세로형</h4>
+                        <div class="program_wrap pt30 pb10">
+                            <div class="items">
+                                <p class="mb5 font_500 font16">국문 세로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="국문세로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ko_1.png">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <p class="mb5 font_500 font16">한문 세로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="한문세로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ch_1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program_wrap pt30 pb10">
+                            <div class="items">
+                                <p class="mb5 font_500 font16">영문 세로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="영문세로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_en_1.png">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <p class="mb5 font_500 font16">한영 세로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="한영세로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ke_1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tit_wrap pt50">
+                        <h4 class="tit">시그너처 가로형</h4>
+                        <div class="program_wrap pt30 pb10">
+                            <div class="items">
+                                <p class="mb5 font_500 font16">국문 가로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="국문가로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ko_2.png">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <p class="mb5 font_500 font16">한문 가로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="한문가로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ch_2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program_wrap pt30 pb10">
+                            <div class="items">
+                                <p class="mb5 font_500 font16">영문 가로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="영문가로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_en_2.png">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <p class="mb5 font_500 font16">한영 가로형</p>
+                                <div class="box_line t_center">
+                                    <img alt="한영가로형 시그너처" src="https://www.tsu.ac.kr/cmm/main/img/content/intro/signature_ke_2.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>								
+        </div>
+
+        <div class="tab-content" id="section_5" data-id="5">
+            <h3 class="tit_st1">중장기발전계획</h3>
+            <div class="t_center mt20">
+                <img src="../images/sub/sub_plan.jpg" alt="중장기발전계획">
+            </div>								
+        </div>
+
+        <div class="tab-content" id="section_6" data-id="6">
+            <h3 class="tit_st1">조직도</h3>
+            <div class="t_center mt20">
+				<img src="../images/sub/sub_tree.png">
+			</div>								
+        </div>
+
+        <div class="tab-content " id="section_7" data-id="7">
+            <h3 class="tit_st1">대학본부</h3>
+            <div class="contBox inner">
+                <div class="sub_program inner">
+                    <div class="tit_wrap">
+                        <h4 class="tit">학사지원처</h4>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">부서소개</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>교육과정개발 및 운영의 내실화</li>
+                                    <li>교원의 꾸준한 연구 활동 지원</li>
+                                    <li>학생의 면학분위기 조성</li>
+                                    <li>학사행정에 적극적인 지원</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">주요업무</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>교무
+                                        <ul class="list_st2 mt5">
+                                            <li> 교육과정 기본계획 수립 및 조정, 대학교육 만족도 조사에 관한 업무, 교원양성과정 운영, 입학식 및 학수여식 업무, 학사학위전공심화과정 운영 및 4년제 대학 연계교육 업무</li>
+                                        </ul>
+                                    </li>
+                                    <li>수업
+                                        <ul class="list_st2 mt5">
+                                            <li>수업계획수립·운영 관련 업무, 강좌개설 및 교수학습계획서 관련 업무, 수업진행 및 휴·보강 관리, 수강신청 및 출석부 관리</li>
+                                        </ul>
+                                    </li>
+                                    <li>학적
+                                        <ul class="list_st2 mt5">
+                                            <li>재적생 변동관리, 학적변동관리(휴학, 복학, 재입학, 제적 등), 학적부 관리, 졸업에 관한 학적업무, 유급 및 수료 업무, 교원자격증 업무, 증명서 발급 업무</li>
+                                            <li>[ 지원센터 ]
+                                                <div class="pl5">
+                                                ·교수학습지원센터<br> 
+                                                ·교육과정지원센터<br> 
+                                                ·학생상담센터<br> 
+                                                ·기초교양교육센터
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tit_wrap pt50">
+                        <h4 class="tit">입학학생처</h4>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">부서소개</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>건전한 학풍의 조성을 위한 학생 자치기구를 긍정적이고 자발적으로 운영토록 지도 </li>
+                                    <li>학생 생활지도를 통한 건전한 가치관을 확립 및 학생 편익 도모하는 복지방안 모색 </li>
+                                    <li>효율적인 장학제도 운영으로 등록금 부담 완화 및 학업능력 고취</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">주요업무</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>장학
+                                        <ul class="list_st2 mt5">
+                                            <li>장학금 운영 기본계획 수립, 국가장학금 및 교외장학금 운영 및 관리, 국가근로장학금 운영 및 관리, 교내장학금 운영 및 관리, 정부학자금(취업후상환·일반·농어촌)대출 관리</li>
+                                        </ul>
+                                    </li>
+                                    <li>학생활동
+                                        <ul class="list_st2 mt5">
+                                            <li>신입생 오리엔테이션 진행 총괄, 학생 학술·예체능·봉사활동 관리, 학생 상벌 관리, 학생회 및 동아리 운영 관리, 행사지도, 학생 자율운영비 및 수혜비 관리지도
+                                            학생 민원상담 및 고충처리, 교내외 학생 안전사고 관련 보험 관리</li>
+                                            <li>[ 지원센터 ]
+                                                <div class="pl5">
+                                                ·지역사회봉사센터<br> 
+                                                ·장애학생지원센터
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tit_wrap pt50">
+                        <h4 class="tit">산학취업처</h4>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">부서소개</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>대학의 산학협력·현장실습·취업지원 업무를 관리·지원</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt50">
+                            <p class="mb5 font_500 font16">주요업무</p>
+                            <div class="box_st3 p20"> 
+                                <ul class="list_st1">
+                                    <li>현장실습교육업무
+                                        <ul class="list-st2 mt5">
+                                            <li>현장실습 교육 계획 및 실시 지원, 현장실습 교육 실습생 보험가입, 현장실습 교육 사전 오리엔테이션 지원, 현장실습 교육 지도결과 보고 관련업무</li>
+                                        </ul>
+                                    </li>
+                                    <li>취업교육·운영
+                                        <ul class="list_st2 mt5">
+                                            <li>취업통계조사 및 사전조사, 취업지원사업 업무, 졸업생 취업지원, 구인·구직 업무, 진로·취업상담, 온라인 상담관리 업무지원</li>								<li>[ 지원센터 ]
+                                                <div class="pl5">
+                                                ·취창업지원센터 <br>
+                                                ·현장실습지원센터 <br>
+                                                ·GIS/LIS창업보육센터 <br>
+                                                ·학교기업 레꼴 
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                            
+        <div class="tab-content" id="section_8" data-id="8">
+            <h3 class="tit_st1">대학홍보</h3>
+            <ul class="category2 mb50">
+                <li><button class="tab2 on" id="tab2_1" data-id="hongbo">홍보영상</button></li>
+                <li><button class="tab2" id="tab2_2" data-id="news">대학신문</button></li>
+                <li class="link"><button class="tab2" onclick="window.open('about:blank').location.href='http://tsu.ac.kr/cmm/main/file/tsu_newsletter.pdf'">소식지</button></li>
+            </ul>						
+            <div class="tab-content2" id="section2_1" style="height:800px;">
+                <iframe src="https://opencampus.tsu.ac.kr/frame_board.php?brd_id=212" name="board_1" frameborder="0" scrolling="0" class="w100 h100"></iframe>
+            </div>						
+            <div class="tab-content2" id="section2_2" style="display:none;height:800px;">
+                <iframe src="https://opencampus.tsu.ac.kr/frame_board.php?brd_id=214" name="board_1" frameborder="0" scrolling="0" class="w100 h100"></iframe>
+            </div>
+
+        </div>
+
+        <div class="tab-content" id="section_9" data-id="9">
+            <h3 class="tit_st1">학교오시는길</h3>
+            <article class="contSt2 traffic resetst sub_program inner" id="cont">
+                <div class="tit_wrap">
+                    <h4 class="tit"><span class="red2">TSU</span> Campus</h4>
+                    <div class="box_st1 mt10 p20">
+                        <ul>
+                            <li>대구광역시 북구 영송로 47 대구과학대학교 <a title="새창열림" class="Abtnb mini ml10 btn bg_black font_white" href="http://map.daum.net/?from=roughmap&amp;eName=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;eX=848166.0&amp;eY=678403.0" target="_blank">길찾기 <i class="xi-pin-drop"></i></a></li>
+                            <li>Tel: 053-320-1114</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="guid mt20 tit_wrap">
+                    <div class="traffic1 oltype-o">
+                        <div class="tit cont_tit_sm"><span class="material-icons">train</span>도시철도로 오시는 길</div>
+                        <ol>
+                            <li> <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=walk&amp;rt=849803%2C677291%2C848166%2C678403&amp;rt1=%EA%B5%AC%EC%95%94%EC%97%AD+%EB%8C%80%EA%B5%AC3%ED%98%B8%EC%84%A0&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=P26605350%2CP7816261" target="_blank"> <strong>도시철도 3호선 구암역 하차</strong><small>(도보 약 15분 거리)</small><i class="xi-directions"></i> </a> </li>
+                        </ol>
+                    </div>
+                    <div class="traffic2 oltype-o mt20 tit_wrap"> 
+                        <div class="cont_tit_sm tit"><span class="material-icons">directions_bus</span>버스로 오시는 길</div>
+                        <ol>
+                            <li>
+                                <h3>정류장 : <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=walk&amp;rt=849285%2C678431%2C848166%2C678403&amp;rt1=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%991&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=BBS63877%2CP7816261" target="_blank"><small>01799</small><strong>대구과학대학1</strong><i class="xi-directions"></i></a></h3>
+                                <div>
+                                    <dl>
+                                        <dt class="bg_blue font_white">간선</dt>
+                                        <dd>527, 708, 726, 730</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_red font_white">급행</dt>
+                                        <dd>급행3, 급행7</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_green font_white">지선</dt>
+                                        <dd>북구1, 칠곡3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_orange font_white">농어촌</dt>
+                                        <dd>300</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>정류장 : <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=walk&amp;rt=849226%2C678535%2C848166%2C678403&amp;rt1=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%992&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=BBS63878%2CP7816261" target="_blank"><small>03129</small><strong>대구과학대학2</strong><i class="xi-directions"></i></a></h3>
+                                <div>
+                                    <dl>
+                                        <dt class="bg_blue font_white">간선</dt>
+                                        <dd>527, 708, 726, 730</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_red font_white">급행</dt>
+                                        <dd>급행3, 급행7</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_green font_white">지선</dt>
+                                        <dd>북구1</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt class="bg_orange font_white">농어촌</dt>
+                                        <dd>300</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>정류장 : <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=walk&amp;rt=848492%2C678257%2C848166%2C678403&amp;rt1=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B1%B4%EB%84%88&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=BBS63851%2CP7816261" target="_blank"><small>01757</small><strong>대구과학대학건너</strong><i class="xi-directions"></i></a></h3>
+                                <div>
+                                    <dl>
+                                        <dt class="bg_green font_white">지선</dt>
+                                        <dd>칠곡1, 칠곡2, 칠곡4</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>정류장 : <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=walk&amp;rt=848443%2C678409%2C848166%2C678403&amp;rt1=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EC%95%9E&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=BBS63850%2CP7816261" target="_blank"><small>01455</small><strong>대구과학대학앞</strong><i class="xi-directions"></i></a></h3>
+                                <div>
+                                    <dl>
+                                        <dt class="bg_green font_white">지선</dt>
+                                        <dd>칠곡1-1, 칠곡2, 칠곡4</dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="traffic3 oltype-o mt20 tit_wrap">
+                        <h2 class="tit"><span class="material-icons">drive_eta</span>자동차로 오시는 길</h2>
+                        <ol>
+                            <li> <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=car&amp;rt=845657%2C663947%2C848166%2C678403&amp;rt1=%EC%84%9C%EB%8C%80%EA%B5%ACIC&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=P7946241%2CP7816261" target="_blank"> <strong>서대구IC</strong> : <small>약 7.9km / 약 9분</small><i class="xi-directions"></i> </a>
+                                <ol class="litypeArrow">
+                                    <li>중부내륙고속도로지선 <i class="xi-angle-right-thin"></i></li>
+                                    <li>중앙고속도로 금호JC <i class="xi-angle-right-thin"></i></li>
+                                    <li>중앙고속도로 칠곡TG <i class="xi-angle-right-thin"></i></li>
+                                    <li>영송로 우회전 후 465m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>우회전 후 93m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>도착</li>
+                                </ol>
+                            </li>
+                            <li> <a title="오는 길 새창에서 보기" class="btmaplink  " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=car&amp;rt=856828%2C672799%2C848166%2C678403&amp;rt1=%EB%B6%81%EB%8C%80%EA%B5%ACIC&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=P11262776%2CP7816261" target="_blank"> <strong>북대구 IC</strong> : <small>약 11.5km / 약 12분</small><i class="xi-directions"></i> </a>
+                                <ol class="litypeArrow">
+                                    <li>경부고속도로 <i class="xi-angle-right-thin"></i></li>
+                                    <li>중앙고속도로 금호JC <i class="xi-angle-right-thin"></i></li>
+                                    <li>중앙고속도로 칠곡TG <i class="xi-angle-right-thin"></i></li>
+                                    <li>영송로 우회전 후 465m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>우회전 후 93m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>도착</li>
+                                </ol>
+                            </li>
+                            <li> <a title="오는 길 새창에서 보기" class="btmaplink " href="http://map.daum.net/?map_type=TYPE_MAP&amp;target=car&amp;rt=846360%2C679881%2C848166%2C678403&amp;rt1=%EC%B9%A0%EA%B3%A1IC&amp;rt2=%EB%8C%80%EA%B5%AC%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90&amp;rtIds=P8095676%2CP7816261" target="_blank"> <strong>칠곡 IC</strong> : <small>약 1.4km / 약 6분</small><i class="xi-directions"></i> </a>
+                                <ol class="litypeArrow">
+                                    <li>중앙고속도로<i class="xi-angle-right-thin"></i></li>
+                                    <li>칠곡TG <i class="xi-angle-right-thin"></i></li>
+                                    <li>영송로 우회전 후 465m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>우회전 후 93m 이동 <i class="xi-angle-right-thin"></i></li>
+                                    <li>도착</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="question linebox">
+                    <div class="cont_tit_sm pt0 font_m">[셔틀버스안내]</div>
+                    <div class="font_m">등·하교시 셔틀버스 운행중입니다. 
+                        <a title="페이지 이동" target="_blank" class="isUrl_self Cbt1 btn bg_black font_white" href="https://www.tsu.ac.kr/tsumain/contents/sub/391">셔틀버스 운행 시간 보기</a>
+                    </div>
+                </div>
+            </article>								
+        </div>
+	</div>
+</section>
+
+<footer class="sub_footer">
+	<div class="addr">
+		( 41453 ) 대구광역시 북구 영송로 47 대구과학대학교(태전동) Tel:053-320-1114<br>Copyright(c) 2022 Taegu Science University. All rights reserved.
+	</div>
+</footer>
