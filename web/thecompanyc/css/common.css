@@ -796,7 +796,7 @@ label span{vertical-align: text-top;margin-left: 7px;}
 .header {width:100%;height:85px;z-index: 998;position: fixed;top: 0;left: 0;display: flex;justify-content: space-between;align-items: flex-start;background-color: #fff;padding: 0 20px;}
 .header_left,.header_right,.header_mid,.logo,.logo a,.lnb,.nav,.gnb,.nav li,.nav li a {height: 100%;}
 
-.logo {display: flex;width: 7rem;align-items: center;background: url("../images/common/logo.png") center center no-repeat;background-size:contain;font-size: 0;}
+.logo {display: flex;width: 7rem;align-items: center;background: url("../images/common/logo_2.png") center center no-repeat;background-size:contain;font-size: 0;}
 .logo a{display: block;width: 100%;font-size: inherit;}
 
 .nav{display:flex;align-items:center;font-size:1.375rem;}
