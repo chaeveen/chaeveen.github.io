@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/common/logo_favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="http://sian.knlsys.com/thecompanyc/contents/main.html">
+    <meta property="og:title" content="더컴퍼니씨협동조합">
+    <meta property="og:description" content="로컬에 기회를 만드는 방법 더컴퍼니씨협동조합">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/common/logo_share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>더컴퍼니씨협동조합</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css?v1.10">
+    <link rel="stylesheet" href="../css/font.css?v1.1">
+    <link rel="stylesheet" href="../css/common.css?v1.1000000">
+    <link rel="stylesheet" href="../css/main.css?v1.100">
+    <link rel="stylesheet" href="../css/sub.css?v1.00000000000000000">
+
+    <!-- jquery -->
+    <script src="../js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="../js/web.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/swiper/swiper.min.js"></script>
+</head><header class="header">
+    <div class="header_left">
+        <h1 class="logo"><a href="main.html">더컴퍼니씨</a></h1>
+    </div>
+    <div class="header_mid">
+		<nav class="lnb">
+			<ul class="nav">
+                <li>
+                    <a href="about.html" target="">회사소개</a>
+                    <ul class="depth1">	
+                        <li><a href="about.html" target="_self" onclick="">ABOUT</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">연혁</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">함께하는 사람들</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">보도자료</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" target="">비즈니스</a>	
+                    <ul class="depth1">	
+                        <li><a href="javascript:void(0);" target="_self" onclick="">사업 매뉴얼</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">사업 소식</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="magazine.html" target="">창업매거진</a>
+                </li>
+                <li>
+                    <a href="recruitment.html" target="">참여자모집</a>
+                    <ul class="depth1">	
+                        <li><a href="recruitment.html" target="_self" onclick="">참여자 모집</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">타기관 공고</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="board.html" target="">공지사항</a>
+                    <ul class="depth1">	
+                        <li><a href="board.html" target="_self" onclick="">공지사항</a></li>
+                        <li><a href="javascript:void(0);" target="_self" onclick="">C스토리</a></li>
+                    </ul>
+                </li>
+            </ul>
+		</nav>
+	</div>
+	<div class="header_right">
+		<ul class="gnb">
+            <li>
+                <a href="javascript:void(0);">LOGIN</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">JOIN</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">MY</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="search_btn"><span class="material-icons">search</span></a>
+            </li>
+        </ul>
+	</div>
+</header>
+
+<div class="search_area">
+    <div class="search_input">
+        <input type="text" class="input" placeholder="검색어를 입력해주세요">
+        <button class="search_input_btn"><span class="material-icons">search</span></button>
+    </div>
+</div>
+
+<header class="mo_header">
+    <ul class="gnb">
+        <li>
+            <a href="javascript:void(0);">LOGIN</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">JOIN</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">MY</a>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a href="javascript:void(0);" target=""><span>회사소개</span><span class="material-icons">arrow_drop_down</span></a>
+            <ul class="depth1">	
+                <li><a href="about.html" target="_self" onclick="">ABOUT</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">연혁</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">함께하는 사람들</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">보도자료</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">오시는길</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0);" target=""><span>비즈니스</span><span class="material-icons">arrow_drop_down</span></a>	
+            <ul class="depth1">	
+                <li><a href="javascript:void(0);" target="_self" onclick="">사업 매뉴얼</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">사업 소식</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="magazine.html" target="">창업매거진</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" target=""><span>참여자모집</span><span class="material-icons">arrow_drop_down</span></a>
+            <ul class="depth1">	
+                <li><a href="recruitment.html" target="_self" onclick="">참여자 모집</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">타기관 공고</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0);" target=""><span>공지사항</span><span class="material-icons">arrow_drop_down</span></a>
+            <ul class="depth1">	
+                <li><a href="board.html" target="_self" onclick="">공지사항</a></li>
+                <li><a href="javascript:void(0);" target="_self" onclick="">C스토리</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<a href="javascript:void(0);" class="mo_search_btn"><span class="material-icons">search</span></a>
+<a href="javascript:void(0);" class="menu_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+<div class="side_bar">
+    <a href="javascript:void(0);"><img src="../images/common/facebook.png" alt="페이스북"></a>
+    <a href="javascript:void(0);"><img src="../images/common/instagram.png" alt="인스타그램"></a>
+    <a href="javascript:void(0);" class="top_btn font_white">
+        문의
+    </a>
+    <a href="javascript:void(0);" class="top_btn" id="bt_top">
+        <span class="material-icons">expand_less</span>
+        <span class="txt">TOP</span>
+    </a>
+</div>
+
+
+<main class="main">
+    <section class="main_slide">
+        <!-- Swiper -->
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box"><video src="https://thecompanyc.com/data/file/main/1982712244_811795_video1_1.mp4" autoplay muted loop class="video"></video></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box"><video src="https://thecompanyc.com/data/file/main/1982712244_455275_video2_1.mp4" autoplay muted loop class="video"></video></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="main_txt">
+                <h3><b>로컬</b>에 <b>기회</b>를<br>만드는 방법</h3>
+                <h2>더컴퍼니씨협동조합</h2>
+            </div>
+
+            <div class="slide-controller">
+                <div class="swiper-btn-area">
+                    <div class="swiper-btn swiper-btn-prev"><span class="material-icons">chevron_left</span></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-btn swiper-btn-next"><span class="material-icons">chevron_right</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_intro">
+        <div class="wrap">
+            <article class="txt_area">
+                <img src="../images/contents/main_txt.png" alt="더컴퍼니씨">
+            </article>
+            <article class="intro_area">
+                <a href="javascript:void(0);">
+                    <img src="../images/contents/intro.png" alt="더컴퍼니씨">
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="magazine section">
+        <div class="wrap">
+            <div class="tit_area">
+                <h2 class="tit">창업<span></span><b>매거진</b></h2>
+                <div class="txt">어디에서도 들을 수 없는 창업자의 이야기</div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper magazine_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>창업매거진</span>
+                                <h3>더컴퍼니씨협동조합 강은경 대표</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/magazine1.png" alt="더컴퍼니씨협동조합 강은경 대표">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">여성기업</div>
+                                <div class="tag">대표</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>창업매거진</span>
+                                <h3>청도 김종명 사무국장</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/magazine2.png" alt="청도 김종명 사무국장">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">청년 로컬크리에이터</div>
+                                <div class="tag">기획</div>
+                                <div class="tag">가슴이 뜨거운 농부</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>창업매거진</span>
+                                <h3>더컴퍼니씨협동조합 강은경 대표2</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/magazine1.png" alt="더컴퍼니씨협동조합 강은경 대표">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">여성기업</div>
+                                <div class="tag">대표</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>창업매거진</span>
+                                <h3>청도 김종명 사무국장2</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/magazine2.png" alt="청도 김종명 사무국장">
+                            </div>
+                            <div class="tag_area">
+                                <div class="tag">청년 로컬크리에이터</div>
+                                <div class="tag">기획</div>
+                                <div class="tag">가슴이 뜨거운 농부</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-btn-area">
+                    <div class="swiper-btn swiper-btn-prev">
+                        <span class="material-icons">trending_flat</span>
+                    </div>
+                    <div class="swiper-btn swiper-btn-next">
+                        <span class="material-icons">trending_flat</span>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <section class="program section">
+        <div class="wrap">
+            <div class="tit_area">
+                <h2 class="tit">프로그램<span></span><b>모집</b></h2>
+                <div class="txt">어디에서도 볼 수 없는 더컴퍼니씨의 프로그램</div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper magazine_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>참여자모집</span>
+                                <h3>C.STATION</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/program1.jpg" alt="C.STATION">
+                                <div class="btn_st1">
+                                    <span class="arrow"></span>
+                                    참여하기
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>참여자모집</span>
+                                <h3>2023 청도 로컬트래블러 시즌2</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/program2.jpg" alt="2023 청도 로컬트래블러 시즌2">
+                                <div class="btn_st1">
+                                    <span class="arrow"></span>
+                                    참여하기
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>참여자모집</span>
+                                <h3>C.STATION2</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/program1.jpg" alt="C.STATION">
+                                <div class="btn_st1">
+                                    <span class="arrow"></span>
+                                    참여하기
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="javascript:void(0);" class="box">
+                            <div class="tit">
+                                <span>참여자모집</span>
+                                <h3>2023 청도 로컬트래블러 시즌22</h3>
+                            </div>
+                            <div class="img_box">
+                                <img src="../images/contents/program2.jpg" alt="2023 청도 로컬트래블러 시즌2">
+                                <div class="btn_st1">
+                                    <span class="arrow"></span>
+                                    참여하기
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-btn-area">
+                    <div class="swiper-btn swiper-btn-prev">
+                        <span class="material-icons">trending_flat</span>
+                    </div>
+                    <div class="swiper-btn swiper-btn-next">
+                        <span class="material-icons">trending_flat</span>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <section class="bg_grayLight">
+        <div class="wrap">
+            <div class="board">
+                <div class="tit_area">
+                    <h3 class="tit">공지사항</h3>
+                    <a href="board.html" class="more_btn">
+                        MORE
+                        <span class="material-icons">add_circle</span>
+                    </a>
+                </div>
+                <div class="con_area">
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_red">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_red">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                </div>
+            </div>
+            <div class="board">
+                <div class="tit_area">
+                    <h3 class="tit">타기관 공고</h3>
+                    <a href="board.html" class="more_btn">
+                        MORE
+                        <span class="material-icons">add_circle</span>
+                    </a>
+                </div>
+                <div class="con_area">
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_green">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_green">공지</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_blueLight">모집</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                    <a href="boardView.html" class="con">
+                        <div class="tit">
+                            <div class="board_tag font_blueLight">모집</div>
+                            <p>사업 실무지원 병행 디자이너(경력자)_종료</p>
+                        </div>
+                        <div class="date">2023.11.11</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="wrap">
+            <article class="txt_area">
+                <img src="../images/contents/support_txt.png?v1" alt="더컴퍼니씨">
+            </article>
+            <article class="support_area">
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support1.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support2.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support3.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support4.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support5.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support6.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support7.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support8.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support9.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support10.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support11.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support12.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support13.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support14.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support15.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support16.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support17.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support18.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support19.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support20.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support21.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support22.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support23.png" alt="support">
+                </a>
+                <a href="javascript:void(0);" class="box">
+                    <img src="../images/contents/support24.png" alt="support">
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="txt">
+            <a href="javascript:void(0);" class="info">이용약관</a>
+            <a href="javascript:void(0);" class="info"><b>개인정보처리방침</b></a>
+            <a href="javascript:void(0);" class="info">청소년보호정책</a>
+            <a href="javascript:void(0);" class="info">저작권보호정책</a>
+            <a href="javascript:void(0);" class="info">이메일무단수집거부</a>
+            <address>
+                <ul class="mb10">
+                    <li class="mb10"><b>"로컬에 기회를 만드는 방법" 더컴퍼니씨협동조합</b></li>
+                    <li>사회적 기업<span class="mr20"></span>더컴퍼니씨협동조합 이사장 :  강은경<span class="mr20"></span>사업자등록번호 : 142-88-01524</li>
+                    <li>대구광역시 중구 태평로 160, 5층 마이크로웨이브 142호(북성로1가, 대구스테이션센터)</li>
+                    <li>대표전화 : 053-710-2040~2<span class="mr20"></span>이메일 : thecompanyc@naver.com</li>
+                </ul>
+                <cite>COPYRIGHT(C) 2024 더컴퍼니씨협동조합<span class="mr20"></span>로컬에 기회를 만드는 방법 All rights reserved.</cite>
+            </address>
+        </div>
+        <div class="img">
+            <h1 class="logo"><a href="../">더컴퍼니씨협동조합</a></h1><h1>
+        </h1></div>
+    </div>
+</footer>
