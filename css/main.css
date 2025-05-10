@@ -757,6 +757,24 @@ section.main {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+      #columns{
+        column-width:350px;
+        column-gap: 15px;
+      }
+      #columns figure{
+        display: inline-block;
+        border:1px solid rgba(0,0,0,0.2);
+        margin:0;
+        margin-bottom: 15px;
+        padding:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);;
+      }
+      #columns figure img{
+        width:100%;
+      }
+
+
 /* 모달 컨텐츠 설정 */
 .modal-contents .contents{
     width: 70%;
