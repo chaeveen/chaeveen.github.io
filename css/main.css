@@ -635,10 +635,9 @@ section.main {
     border-bottom: #000 2px solid;
     text-align: center;
     padding: 1rem;
-}
-#web .mid .wrap h4 img{
-    height: 100%;
-    padding: 0.625rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 #web .mid .wrap a{
     padding: 1.875rem;
@@ -865,7 +864,7 @@ section.main {
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:900px) {
     body,
     html {
         font-size: 11px;
