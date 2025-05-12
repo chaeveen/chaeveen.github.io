@@ -864,7 +864,7 @@ section.main {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:767px) {
     body,
     html {
         font-size: 11px;
@@ -889,9 +889,12 @@ section.main {
     }
     /* web */
     #web .mid .wrap h4{
-        height: 10rem;
+        height: 8rem;
         border-bottom: #000 2px solid;
-        text-align: center;
+        padding:2rem;
+    }
+    #web .mid .wrap h4 img{
+        height:100%;
     }
     #web .mid .wrap{
         width: 100%;
