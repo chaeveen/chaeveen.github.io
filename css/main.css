@@ -639,6 +639,9 @@ section.main {
     align-items:center;
     justify-content:center;
 }
+#web .mid .wrap:last-child h4 img{
+    height:100%;
+}
 #web .mid .wrap a{
     padding: 1.875rem;
     display: block;
@@ -733,6 +736,7 @@ section.main {
     cursor: pointer;
     overflow: hidden;
     border: 2px solid #000;
+    margin-bottom:2rem;
 }
 
 #graphic .mid .right img {
@@ -742,7 +746,7 @@ section.main {
 #graphic .mid .right span {
     font-size: 1.25rem;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -848,15 +852,18 @@ section.main {
         border-right: #000 2px solid;
     }
     /* graphic */
-    #graphic .mid .right img {
-        width: 19rem;
-    }
     .modal-contents .contents{
         width: 80%;
     }
     .modal-close{
         right: 12%;
         top: 16.5%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #graphic .mid .right{
+        columns:2;
     }
 }
 
@@ -912,15 +919,12 @@ section.main {
         width: 70%;
         padding: 1.5rem;
     }
-    #graphic .mid .right img {
-        width: 25rem;
-    }
     .modal-close{
         right: 14%;
         top: 16.3%;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     body,
     html {
         font-size: 9px;
@@ -942,5 +946,18 @@ section.main {
     }
     .modal-contents .contents .bot{
         height: 60rem;
+    }
+
+    
+    #graphic .mid .left {
+        display:none;
+    }
+    #graphic .mid .right {
+        width: 100%;
+    }
+}
+@media screen and (max-width:430px) {
+        #graphic .mid .right{
+        columns:1;
     }
 }
